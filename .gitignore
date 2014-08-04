@@ -1,0 +1,7 @@
+target
+bin
+test-logs
+.project
+.settings
+.classpath
+data
