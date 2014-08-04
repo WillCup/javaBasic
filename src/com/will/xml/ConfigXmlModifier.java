@@ -32,6 +32,7 @@ public class ConfigXmlModifier {
 	private static XMLOutputter outputter;
 	private static Document doc;
 	static String CONFIG = "src/test.xml";
+	static String RESULT = "src/test_result.xml";
 	
 	private static String installPath;
 	
@@ -147,9 +148,9 @@ public class ConfigXmlModifier {
 		Element rootElement = doc.getRootElement();
 		System.out.println(id + "   id in delete");
 		System.out.println(xPath + "    xpath in delete");
-		List<Element> serviceGroupEle = (List<Element>) XPath.selectNodes(
+		List<Element> serviceItemEle = (List<Element>) XPath.selectNodes(
 				rootElement, xPath);
-		for (Element e : serviceGroupEle) {
+		for (Element e : serviceItemEle) {
 			System.out.println(e.getName());
 			System.out.println(e.getChild("id").getTextTrim());
 			if (e.getChild("id").getTextTrim().equals(id)) {
@@ -159,7 +160,7 @@ public class ConfigXmlModifier {
 			}
 		}
 		getXmlOutputter().output(doc,
-				new FileOutputStream(getFile()));
+				new FileOutputStream(RESULT));
 	}
 
 	/**
@@ -180,10 +181,10 @@ public class ConfigXmlModifier {
 	}
 
 	static public void main(String ars[]) throws JDOMException, IOException {
-		SAXBuilder saxBuilder = new SAXBuilder();
-		Document doc = saxBuilder.build(getFile());
-		System.out.println(doc.getContent());
-		System.out.println(doc.toString());
+//		SAXBuilder saxBuilder = new SAXBuilder();
+//		Document doc = saxBuilder.build(getFile());
+//		System.out.println(doc.getContent());
+//		System.out.println(doc.toString());
 //		Map configs = new HashMap();
 //		configs.put("user", "will");
 //		configs.put("password", "ab1");
@@ -197,14 +198,14 @@ public class ConfigXmlModifier {
 //		serviceItem.put("id", "dsgfdgdfgddfsfds324324");
 //		serviceItem.put("probability", "100");
 //		serviceItem.put("configs", configs);
-//		String xpath = "service[name='mysql']/service-group";
+		String xpath = "service[name='mysql']/service-group";
 //
 //		addServiceItems(serviceItem, xpath);// add
 //
-//		String deleteXPath = xpath + "/service-item";
-//		String id = "sdfsdfdsf";
+		String deleteXPath = xpath + "/service-item";
+		String id = "sdfsdfdsf";
 //		System.out.println(id);
-		// deleteServiceItem(id, deleteXPath);
+		 deleteServiceItem(id, deleteXPath);
 		
 	}
 
