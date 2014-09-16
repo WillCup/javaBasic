@@ -8,7 +8,7 @@
 	<properties>
 		<sigar.version>1.6.6.10</sigar.version>
 		<es.version>1.2.1</es.version>
-		<jetty.version>8.1.15.v20140411</jetty.version>
+		<jetty.version>9.2.1.v20140609</jetty.version>
 		<dropwizard.version>0.7.1</dropwizard.version>
 	</properties>
 
@@ -199,16 +199,26 @@
 		</dependency>
 
 		<!-- Jetty -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-servlet</artifactId>
 			<version>${jetty.version}</version>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-server</artifactId>
 			<version>${jetty.version}</version>
 		</dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-xml</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-plus</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
 
 		<!-- Send message to server -->
 		<dependency>
