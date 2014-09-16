@@ -55,7 +55,6 @@ public class TestMemcached {
             while (iterator2.hasNext()) {
                 Entry<String, String> next2 = iterator2.next();
                 System.out.println("\t inner key is: " + next2.getKey() + " , inner value is :" + next2.getValue());
-                System.out.println("{\"name\" : \"" + next2.getKey() + "\", \"active\" : false},");
             }
         }
         

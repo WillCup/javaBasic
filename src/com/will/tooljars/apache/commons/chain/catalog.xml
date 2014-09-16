@@ -1,0 +1,14 @@
+<catalog>
+  <chain name="sell-vehicle">
+  <command   id="GetCustomerInfo"
+    className="com.jadecove.chain.sample.GetCustomerInfo"/>
+  <command   id="TestDriveVehicle"
+    className="com.jadecove.chain.sample.TestDriveVehicle"/>
+  <command   id="NegotiateSale"
+    className="com.jadecove.chain.sample.NegotiateSale"/>
+  <command   id="ArrangeFinancing"
+    className="com.jadecove.chain.sample.ArrangeFinancing"/>
+  <command   id="CloseSale"
+    className="com.jadecove.chain.sample.CloseSale"/>
+  </chain>
+</catalog>

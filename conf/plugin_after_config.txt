@@ -1,0 +1,99 @@
+{
+    "ptql": "State.Name.re=java|jsvc,State.Name.Pne=jsvc,Args.*.sw=-Dcatalina.base=",
+    "pluginName": "tomcat",
+    "className": "com.cloudwise.hostagent.task.tomcat.TomcatTask",
+    "serviceGroup": [
+        {
+            "id": "f899139df5e1059396431415e770c6dd",
+            "active": "y",
+            "frequency": 5,
+            "probability": 100,
+            "serviceConfig": {
+                "user": "controlRole",
+                "password": "R&D",
+                "ip": "10.0.1.44",
+                "port": 8999
+            }
+        },
+        {
+            "id": "f899139df5e1059396431415e770c6dd",
+            "active": "y",
+            "frequency": 5,
+            "probability": 100,
+            "serviceConfig": {
+                "user": "controlRole",
+                "password": "R&D",
+                "ip": "10.0.1.44",
+                "port": 8999
+            }
+        }
+    ],
+    "metrics": [
+        {
+            "name": "memInit",
+            "active": "y"
+        },
+        {
+            "name": "memInit",
+            "active": "y"
+        },
+        {
+            "name": "memInit",
+            "active": "y"
+        },
+        {
+            "name": "memInit",
+            "active": "y"
+        },
+        {
+            "name": "memInit",
+            "active": "y"
+        },
+        {
+            "name": "memInit",
+            "active": "y"
+        },
+        {
+            "name": "memInit",
+            "active": "y"
+        },
+        {
+            "name": "memInit",
+            "active": "y"
+        },
+        {
+            "name": "memInit",
+            "active": "y"
+        }
+    ],
+    "subMetrics": [
+        {
+            "name": "memInit",
+            "active": "y"
+        },
+        {
+            "name": "memInit",
+            "active": "y"
+        },
+        {
+            "name": "memInit",
+            "active": "y"
+        },
+        {
+            "name": "memInit",
+            "active": "y"
+        },
+        {
+            "name": "memInit",
+            "active": "y"
+        },
+        {
+            "name": "memInit",
+            "active": "y"
+        },
+        {
+            "name": "memInit",
+            "active": "y"
+        }
+    ]
+}
