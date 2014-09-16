@@ -1,0 +1,25 @@
+One Small Caveat of Socket Buffer
+
+In a stream-based transport such as TCP/IP, received data is stored into a socket receive buffer. 
+Unfortunately, the buffer of a stream-based transport is not a queue of packets but a queue of bytes. 
+It means, even if you sent two messages as two independent packets, an operating system will not treat
+them as two messages but as just a bunch of bytes. Therefore, there is no guarantee that what you read
+is exactly what your remote peer wrote. For example, let us assume that the TCP/IP stack of an operating
+system has received three packets:
+
+  1 +-----+-----+-----+
+  2 | ABC | DEF | GHI |
+    +-----+-----+-----+
+Because of this general property of a stream-based protocol, there's high chance of reading them in the
+ following fragmented form in your application:
+
+  1 +----+-------+---+---+
+  2 | AB | CDEFG | H | I |
+    +----+-------+---+---+
+Therefore, a receiving part, regardless it is server-side or client-side, should defrag the received data
+ into one or more meaningful frames that could be easily understood by the application logic. 
+ In case of the example above, the received data should be framed like the following:
+
+  1 +-----+-----+-----+
+  2 | ABC | DEF | GHI |
+    +-----+-----+-----+

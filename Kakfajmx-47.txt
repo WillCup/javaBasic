@@ -1,0 +1,3170 @@
+[Domains]
+JMImplementation
+com.sun.management
+java.nio
+"kafka.cluster"
+"kafka.log"
+kafka
+"kafka.server"
+java.lang
+"kafka.network"
+"kafka.controller"
+java.util.logging
+
+[All ObjectInstance]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="ControlledShutdown-ResponseSendTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="siteTopic-2-NumLogSegments"]
+javax.management.MBeanServerDelegate[JMImplementation:type=MBeanServerDelegate]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="timerTopic-1-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="traceRouteTopic-0-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="dnsTopic-1-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="traceRouteTopic-2-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Fetch-RemoteTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="timerTopic-1-NumLogSegments"]
+sun.management.ManagementFactoryHelper$1[java.nio:type=BufferPool,name=mapped]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="siteviewTopic-1-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="pingTopic-2-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="tcpTopic-1-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="pingTopic-0-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="apiTopic-2-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="siteviewTopic-2-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.server":type="ReplicaManager",name="LeaderCount"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Fetch-Consumer-TotalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="dnsTopic-1-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Fetch-RequestQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Fetch-Follower-ResponseQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="ControlledShutdown-LocalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="dnsTopic-1-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="LeaderAndIsr-RequestQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="apiTopic-1-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="timerTopic-1-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="dnsTopic-0-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.network":type="RequestMetrics",name="ControlledShutdown-RequestsPerSec"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="smtpTopic-2-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Produce-ResponseSendTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="siteviewTopic-1-LogEndOffset"]
+sun.management.ManagementFactoryHelper$PlatformLoggingImpl[java.util.logging:type=Logging]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="OffsetCommit-LocalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="StopReplica-RemoteTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="siteTopic-0-Size"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="OffsetCommit-ResponseSendTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="siteTopic-2-UnderReplicated"]
+sun.management.GarbageCollectorImpl[java.lang:type=GarbageCollector,name=ConcurrentMarkSweep]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Offsets-ResponseQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="reliabilityTopic-0-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="LeaderAndIsr-LocalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="OffsetCommit-ResponseQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="siteTopic-0-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.server":type="ReplicaManager",name="IsrExpandsPerSec"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="udpTopic-0-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="traceRouteTopic-1-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="udpTopic-2-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="timerTopic-0-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="udpTopic-0-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="OffsetFetch-RequestQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Metadata-RemoteTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.network":type="RequestMetrics",name="OffsetFetch-RequestsPerSec"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Offsets-TotalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="apiTopic-0-Size"]
+sun.management.CompilationImpl[java.lang:type=Compilation]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="LeaderAndIsr-RemoteTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="dnsTopic-0-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="tcpTopic-2-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="tcpTopic-1-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="UpdateMetadata-ResponseSendTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="tcpTopic-0-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Fetch-Follower-ResponseSendTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="tcpTopic-1-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Metadata-LocalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="reliabilityTopic-1-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Metadata-ResponseQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="pingTopic-1-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="UpdateMetadata-TotalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Fetch-ResponseQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="timerTopic-2-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="smtpTopic-0-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="smtpTopic-1-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="UpdateMetadata-LocalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="apiTopic-1-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="tcpTopic-0-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Timer["kafka.controller":type="ControllerStats",name="LeaderElectionRateAndTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.server":type="FetchRequestPurgatory",name="NumDelayedRequests"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="udpTopic-1-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="siteviewTopic-2-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.network":type="RequestChannel",name="Processor-1-ResponseQueueSize"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="tcpTopic-1-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.server":type="ReplicaFetcherManager",name="Replica-MinFetchRate"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="traceRouteTopic-1-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.network":type="RequestMetrics",name="Offsets-RequestsPerSec"]
+sun.management.HotSpotDiagnostic[com.sun.management:type=HotSpotDiagnostic]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="siteTopic-1-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="siteTopic-1-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Fetch-Consumer-ResponseQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="traceRouteTopic-1-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="dnsTopic-0-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="smtpTopic-2-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Fetch-Follower-TotalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Offsets-ResponseSendTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="traceRouteTopic-0-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.network":type="RequestChannel",name="Processor-0-ResponseQueueSize"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Metadata-TotalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="pingTopic-0-Size"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.server":type="DelayedFetchRequestMetrics",name="ConsumerExpiresPerSecond"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="tcpTopic-0-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.controller":type="KafkaController",name="ActiveControllerCount"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="OffsetFetch-LocalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="OffsetFetch-ResponseSendTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.controller":type="KafkaController",name="PreferredReplicaImbalanceCount"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Fetch-Consumer-RequestQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Produce-RemoteTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="timerTopic-0-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="timerTopic-2-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="LeaderAndIsr-TotalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.network":type="RequestMetrics",name="OffsetCommit-RequestsPerSec"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="traceRouteTopic-2-UnderReplicated"]
+com.sun.management.UnixOperatingSystem[java.lang:type=OperatingSystem]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Fetch-Consumer-ResponseSendTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="LeaderAndIsr-ResponseQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="pingTopic-2-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="OffsetCommit-TotalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="udpTopic-0-Size"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="UpdateMetadata-ResponseQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Metadata-RequestQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="pingTopic-2-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="udpTopic-1-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="reliabilityTopic-2-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="udpTopic-0-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.server":type="FetchRequestPurgatory",name="PurgatorySize"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Offsets-RequestQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="reliabilityTopic-1-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.network":type="RequestMetrics",name="Produce-RequestsPerSec"]
+sun.management.GarbageCollectorImpl[java.lang:type=GarbageCollector,name=ParNew]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="siteviewTopic-0-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="reliabilityTopic-1-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="siteTopic-1-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="udpTopic-2-Size"]
+sun.management.MemoryImpl[java.lang:type=Memory]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="dnsTopic-1-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.server":type="ReplicaManager",name="UnderReplicatedPartitions"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.server":type="BrokerTopicMetrics",name="AllTopicsFailedProduceRequestsPerSec"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="timerTopic-1-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="apiTopic-0-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="siteviewTopic-1-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="siteTopic-1-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="timerTopic-2-NumLogSegments"]
+sun.management.MemoryPoolImpl[java.lang:type=MemoryPool,name=Par Eden Space]
+kafka.utils.Log4jController[kafka:type=kafka.Log4jController]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="siteviewTopic-2-Size"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.network":type="RequestMetrics",name="StopReplica-RequestsPerSec"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="udpTopic-2-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="traceRouteTopic-0-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="smtpTopic-0-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="reliabilityTopic-2-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.network":type="RequestMetrics",name="Fetch-RequestsPerSec"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="siteTopic-2-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.network":type="RequestMetrics",name="UpdateMetadata-RequestsPerSec"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="pingTopic-1-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="siteviewTopic-2-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.network":type="RequestMetrics",name="Fetch-Follower-RequestsPerSec"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.server":type="BrokerTopicMetrics",name="AllTopicsFailedFetchRequestsPerSec"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="reliabilityTopic-1-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Fetch-TotalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="OffsetCommit-RequestQueueTimeMs"]
+sun.management.MemoryPoolImpl[java.lang:type=MemoryPool,name=Code Cache]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="StopReplica-RequestQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.network":type="RequestChannel",name="RequestQueueSize"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Fetch-Consumer-RemoteTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="smtpTopic-2-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="apiTopic-1-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.server":type="ProducerRequestPurgatory",name="NumDelayedRequests"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="reliabilityTopic-2-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="pingTopic-2-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="udpTopic-2-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="OffsetCommit-RemoteTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Produce-LocalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Fetch-ResponseSendTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Produce-RequestQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="apiTopic-2-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="dnsTopic-0-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.server":type="DelayedProducerRequestMetrics",name="AllExpiresPerSecond"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="pingTopic-0-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="timerTopic-0-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="siteviewTopic-0-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="reliabilityTopic-0-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="traceRouteTopic-2-Size"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="ControlledShutdown-ResponseQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="udpTopic-1-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="reliabilityTopic-0-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="tcpTopic-0-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.server":type="DelayedFetchRequestMetrics",name="FollowerExpiresPerSecond"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="StopReplica-TotalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="smtpTopic-0-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="pingTopic-1-LogEndOffset"]
+sun.management.ThreadImpl[java.lang:type=Threading]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="StopReplica-ResponseSendTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Fetch-Follower-LocalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="siteTopic-0-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="smtpTopic-2-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.controller":type="KafkaController",name="OfflinePartitionsCount"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="siteviewTopic-0-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="reliabilityTopic-0-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Offsets-RemoteTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Produce-TotalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.controller":type="ControllerStats",name="UncleanLeaderElectionsPerSec"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.network":type="RequestMetrics",name="LeaderAndIsr-RequestsPerSec"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="siteTopic-2-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="timerTopic-2-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.server":type="ProducerRequestPurgatory",name="PurgatorySize"]
+sun.management.MemoryPoolImpl[java.lang:type=MemoryPool,name=Par Survivor Space]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="LeaderAndIsr-ResponseSendTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.server":type="BrokerTopicMetrics",name="AllTopicsBytesInPerSec"]
+sun.management.MemoryPoolImpl[java.lang:type=MemoryPool,name=CMS Perm Gen]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="smtpTopic-0-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="apiTopic-2-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="ControlledShutdown-TotalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.server":type="ReplicaManager",name="PartitionCount"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="siteviewTopic-1-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="timerTopic-0-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="apiTopic-1-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="smtpTopic-1-Size"]
+sun.management.MemoryManagerImpl[java.lang:type=MemoryManager,name=CodeCacheManager]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Produce-ResponseQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="OffsetFetch-RemoteTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="UpdateMetadata-RequestQueueTimeMs"]
+sun.management.RuntimeImpl[java.lang:type=Runtime]
+sun.management.ManagementFactoryHelper$1[java.nio:type=BufferPool,name=direct]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="siteTopic-0-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Fetch-Follower-RequestQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="OffsetFetch-TotalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="apiTopic-2-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="tcpTopic-2-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="pingTopic-1-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="StopReplica-ResponseQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="udpTopic-1-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="smtpTopic-1-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="apiTopic-0-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Fetch-Follower-RemoteTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="traceRouteTopic-0-Size"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="tcpTopic-2-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="OffsetFetch-ResponseQueueTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="pingTopic-0-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.server":type="BrokerTopicMetrics",name="AllTopicsMessagesInPerSec"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.server":type="BrokerTopicMetrics",name="AllTopicsBytesOutPerSec"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Fetch-LocalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="tcpTopic-2-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Fetch-Consumer-LocalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Offsets-LocalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.network":type="RequestMetrics",name="Fetch-Consumer-RequestsPerSec"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="apiTopic-0-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.server":type="ReplicaFetcherManager",name="Replica-MaxLag"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.cluster":type="Partition",name="reliabilityTopic-2-UnderReplicated"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="traceRouteTopic-1-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.network":type="RequestMetrics",name="Metadata-RequestsPerSec"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="UpdateMetadata-RemoteTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="smtpTopic-1-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.server":type="BrokerTopicMetrics",name="AllTopicsLogBytesAppendedPerSec"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="Metadata-ResponseSendTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="StopReplica-LocalTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Meter["kafka.server":type="ReplicaManager",name="IsrShrinksPerSec"]
+sun.management.ClassLoadingImpl[java.lang:type=ClassLoading]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="traceRouteTopic-2-LogEndOffset"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="ControlledShutdown-RemoteTimeMs"]
+com.yammer.metrics.reporting.JmxReporter$Gauge["kafka.log":type="Log",name="siteviewTopic-0-NumLogSegments"]
+com.yammer.metrics.reporting.JmxReporter$Histogram["kafka.network":type="RequestMetrics",name="ControlledShutdown-RequestQueueTimeMs"]
+sun.management.MemoryPoolImpl[java.lang:type=MemoryPool,name=CMS Old Gen]
+
+[All ObjectInstance and Their Attributes]
+"kafka.log":type="Log",name="tcpTopic-1-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.server":type="DelayedFetchRequestMetrics",name="ConsumerExpiresPerSecond"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.log":type="Log",name="tcpTopic-0-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="reliabilityTopic-1-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="dnsTopic-0-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+java.lang:type=MemoryPool,name=Par Eden Space
+	attributeName=CollectionUsage	type=javax.management.openmbean.CompositeData
+	attributeName=CollectionUsageThreshold	type=long
+	attributeName=CollectionUsageThresholdCount	type=long
+	attributeName=MemoryManagerNames	type=[Ljava.lang.String;
+	attributeName=PeakUsage	type=javax.management.openmbean.CompositeData
+	attributeName=Usage	type=javax.management.openmbean.CompositeData
+	attributeName=UsageThreshold	type=long
+	attributeName=UsageThresholdCount	type=long
+	attributeName=CollectionUsageThresholdExceeded	type=boolean
+	attributeName=CollectionUsageThresholdSupported	type=boolean
+	attributeName=UsageThresholdExceeded	type=boolean
+	attributeName=UsageThresholdSupported	type=boolean
+	attributeName=Name	type=java.lang.String
+	attributeName=Type	type=java.lang.String
+	attributeName=Valid	type=boolean
+	attributeName=ObjectName	type=javax.management.ObjectName
+"kafka.log":type="Log",name="apiTopic-0-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="OffsetCommit-RequestsPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.log":type="Log",name="tcpTopic-2-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.cluster":type="Partition",name="tcpTopic-1-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.cluster":type="Partition",name="udpTopic-0-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.cluster":type="Partition",name="traceRouteTopic-1-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.cluster":type="Partition",name="timerTopic-0-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="udpTopic-0-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+java.lang:type=MemoryPool,name=Code Cache
+	attributeName=CollectionUsage	type=javax.management.openmbean.CompositeData
+	attributeName=CollectionUsageThreshold	type=long
+	attributeName=CollectionUsageThresholdCount	type=long
+	attributeName=MemoryManagerNames	type=[Ljava.lang.String;
+	attributeName=PeakUsage	type=javax.management.openmbean.CompositeData
+	attributeName=Usage	type=javax.management.openmbean.CompositeData
+	attributeName=UsageThreshold	type=long
+	attributeName=UsageThresholdCount	type=long
+	attributeName=CollectionUsageThresholdExceeded	type=boolean
+	attributeName=CollectionUsageThresholdSupported	type=boolean
+	attributeName=UsageThresholdExceeded	type=boolean
+	attributeName=UsageThresholdSupported	type=boolean
+	attributeName=Name	type=java.lang.String
+	attributeName=Type	type=java.lang.String
+	attributeName=Valid	type=boolean
+	attributeName=ObjectName	type=javax.management.ObjectName
+"kafka.log":type="Log",name="udpTopic-2-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.cluster":type="Partition",name="siteTopic-2-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Fetch-Consumer-RemoteTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="siteTopic-0-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Produce-RequestsPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.network":type="RequestMetrics",name="StopReplica-RequestQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="reliabilityTopic-0-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="OffsetCommit-RequestQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="Fetch-TotalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.cluster":type="Partition",name="siteTopic-0-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.cluster":type="Partition",name="apiTopic-1-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+java.lang:type=Memory
+	attributeName=HeapMemoryUsage	type=javax.management.openmbean.CompositeData
+	attributeName=NonHeapMemoryUsage	type=javax.management.openmbean.CompositeData
+	attributeName=ObjectPendingFinalizationCount	type=int
+	attributeName=Verbose	type=boolean
+	attributeName=ObjectName	type=javax.management.ObjectName
+"kafka.cluster":type="Partition",name="timerTopic-1-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="dnsTopic-1-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Produce-RequestQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="smtpTopic-2-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Fetch-ResponseSendTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.cluster":type="Partition",name="dnsTopic-0-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="siteviewTopic-1-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Produce-LocalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="OffsetCommit-RemoteTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="dnsTopic-1-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="pingTopic-2-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="siteviewTopic-1-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="StopReplica-TotalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.server":type="ReplicaManager",name="LeaderCount"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="ControlledShutdown-ResponseQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="tcpTopic-1-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="pingTopic-0-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="apiTopic-2-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="siteviewTopic-2-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="siteTopic-2-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Produce-TotalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="Offsets-RemoteTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="timerTopic-1-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="traceRouteTopic-0-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="dnsTopic-1-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Fetch-Follower-LocalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="Offsets-RequestsPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.network":type="RequestMetrics",name="StopReplica-ResponseSendTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="timerTopic-1-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="traceRouteTopic-2-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="reliabilityTopic-2-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="udpTopic-0-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="udpTopic-1-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.cluster":type="Partition",name="reliabilityTopic-1-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="ControlledShutdown-TotalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.server":type="FetchRequestPurgatory",name="PurgatorySize"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="LeaderAndIsr-ResponseSendTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="siteTopic-1-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="udpTopic-2-Size"
+	attributeName=Value	type=java.lang.Object
+java.nio:type=BufferPool,name=mapped
+	attributeName=Count	type=long
+	attributeName=MemoryUsed	type=long
+	attributeName=TotalCapacity	type=long
+	attributeName=Name	type=java.lang.String
+	attributeName=ObjectName	type=javax.management.ObjectName
+"kafka.cluster":type="Partition",name="siteviewTopic-0-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="reliabilityTopic-1-Size"
+	attributeName=Value	type=java.lang.Object
+java.lang:type=Compilation
+	attributeName=TotalCompilationTime	type=long
+	attributeName=CompilationTimeMonitoringSupported	type=boolean
+	attributeName=Name	type=java.lang.String
+	attributeName=ObjectName	type=javax.management.ObjectName
+"kafka.network":type="RequestMetrics",name="OffsetFetch-RequestsPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.network":type="RequestMetrics",name="Produce-ResponseQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="udpTopic-0-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.cluster":type="Partition",name="pingTopic-2-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.server":type="ReplicaManager",name="IsrExpandsPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+java.lang:type=MemoryPool,name=CMS Perm Gen
+	attributeName=CollectionUsage	type=javax.management.openmbean.CompositeData
+	attributeName=CollectionUsageThreshold	type=long
+	attributeName=CollectionUsageThresholdCount	type=long
+	attributeName=MemoryManagerNames	type=[Ljava.lang.String;
+	attributeName=PeakUsage	type=javax.management.openmbean.CompositeData
+	attributeName=Usage	type=javax.management.openmbean.CompositeData
+	attributeName=UsageThreshold	type=long
+	attributeName=UsageThresholdCount	type=long
+	attributeName=CollectionUsageThresholdExceeded	type=boolean
+	attributeName=CollectionUsageThresholdSupported	type=boolean
+	attributeName=UsageThresholdExceeded	type=boolean
+	attributeName=UsageThresholdSupported	type=boolean
+	attributeName=Name	type=java.lang.String
+	attributeName=Type	type=java.lang.String
+	attributeName=Valid	type=boolean
+	attributeName=ObjectName	type=javax.management.ObjectName
+java.lang:type=MemoryPool,name=Par Survivor Space
+	attributeName=CollectionUsage	type=javax.management.openmbean.CompositeData
+	attributeName=CollectionUsageThreshold	type=long
+	attributeName=CollectionUsageThresholdCount	type=long
+	attributeName=MemoryManagerNames	type=[Ljava.lang.String;
+	attributeName=PeakUsage	type=javax.management.openmbean.CompositeData
+	attributeName=Usage	type=javax.management.openmbean.CompositeData
+	attributeName=UsageThreshold	type=long
+	attributeName=UsageThresholdCount	type=long
+	attributeName=CollectionUsageThresholdExceeded	type=boolean
+	attributeName=CollectionUsageThresholdSupported	type=boolean
+	attributeName=UsageThresholdExceeded	type=boolean
+	attributeName=UsageThresholdSupported	type=boolean
+	attributeName=Name	type=java.lang.String
+	attributeName=Type	type=java.lang.String
+	attributeName=Valid	type=boolean
+	attributeName=ObjectName	type=javax.management.ObjectName
+"kafka.log":type="Log",name="pingTopic-2-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Fetch-Follower-RequestQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="timerTopic-0-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.cluster":type="Partition",name="timerTopic-2-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+java.lang:type=Runtime
+	attributeName=StartTime	type=long
+	attributeName=InputArguments	type=[Ljava.lang.String;
+	attributeName=ManagementSpecVersion	type=java.lang.String
+	attributeName=SpecName	type=java.lang.String
+	attributeName=SpecVendor	type=java.lang.String
+	attributeName=SpecVersion	type=java.lang.String
+	attributeName=SystemProperties	type=javax.management.openmbean.TabularData
+	attributeName=Uptime	type=long
+	attributeName=BootClassPath	type=java.lang.String
+	attributeName=LibraryPath	type=java.lang.String
+	attributeName=VmName	type=java.lang.String
+	attributeName=VmVendor	type=java.lang.String
+	attributeName=VmVersion	type=java.lang.String
+	attributeName=BootClassPathSupported	type=boolean
+	attributeName=Name	type=java.lang.String
+	attributeName=ClassPath	type=java.lang.String
+	attributeName=ObjectName	type=javax.management.ObjectName
+"kafka.network":type="RequestMetrics",name="UpdateMetadata-RequestQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.cluster":type="Partition",name="traceRouteTopic-2-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="OffsetFetch-RemoteTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.cluster":type="Partition",name="traceRouteTopic-0-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestChannel",name="Processor-0-ResponseQueueSize"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="StopReplica-ResponseQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="tcpTopic-0-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="pingTopic-0-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.controller":type="KafkaController",name="PreferredReplicaImbalanceCount"
+	attributeName=Value	type=java.lang.Object
+"kafka.controller":type="KafkaController",name="ActiveControllerCount"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="OffsetFetch-TotalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="OffsetFetch-ResponseQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.cluster":type="Partition",name="siteTopic-1-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="siteTopic-1-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Fetch-Follower-RemoteTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="traceRouteTopic-1-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="dnsTopic-0-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="smtpTopic-2-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestChannel",name="Processor-1-ResponseQueueSize"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Offsets-LocalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="Fetch-Consumer-LocalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="tcpTopic-1-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="traceRouteTopic-1-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.server":type="ReplicaFetcherManager",name="Replica-MinFetchRate"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Fetch-LocalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+java.lang:type=MemoryPool,name=CMS Old Gen
+	attributeName=CollectionUsage	type=javax.management.openmbean.CompositeData
+	attributeName=CollectionUsageThreshold	type=long
+	attributeName=CollectionUsageThresholdCount	type=long
+	attributeName=MemoryManagerNames	type=[Ljava.lang.String;
+	attributeName=PeakUsage	type=javax.management.openmbean.CompositeData
+	attributeName=Usage	type=javax.management.openmbean.CompositeData
+	attributeName=UsageThreshold	type=long
+	attributeName=UsageThresholdCount	type=long
+	attributeName=CollectionUsageThresholdExceeded	type=boolean
+	attributeName=CollectionUsageThresholdSupported	type=boolean
+	attributeName=UsageThresholdExceeded	type=boolean
+	attributeName=UsageThresholdSupported	type=boolean
+	attributeName=Name	type=java.lang.String
+	attributeName=Type	type=java.lang.String
+	attributeName=Valid	type=boolean
+	attributeName=ObjectName	type=javax.management.ObjectName
+"kafka.log":type="Log",name="tcpTopic-0-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.server":type="FetchRequestPurgatory",name="NumDelayedRequests"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="udpTopic-1-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.cluster":type="Partition",name="smtpTopic-1-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+kafka:type=kafka.Log4jController
+	attributeName=Loggers	type=java.util.List
+"kafka.log":type="Log",name="apiTopic-1-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="siteviewTopic-2-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="UpdateMetadata-RemoteTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+java.util.logging:type=Logging
+	attributeName=ObjectName	type=javax.management.ObjectName
+	attributeName=LoggerNames	type=[Ljava.lang.String;
+"kafka.log":type="Log",name="pingTopic-1-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="ControlledShutdown-RequestQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="ControlledShutdown-RemoteTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+com.sun.management:type=HotSpotDiagnostic
+	attributeName=DiagnosticOptions	type=[Ljavax.management.openmbean.CompositeData;
+	attributeName=ObjectName	type=javax.management.ObjectName
+"kafka.log":type="Log",name="timerTopic-2-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="smtpTopic-0-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="ControlledShutdown-RequestsPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.network":type="RequestMetrics",name="StopReplica-LocalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="Metadata-ResponseSendTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="Fetch-RemoteTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.controller":type="KafkaController",name="OfflinePartitionsCount"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="siteviewTopic-0-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="siteTopic-0-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.cluster":type="Partition",name="smtpTopic-2-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+java.lang:type=GarbageCollector,name=ConcurrentMarkSweep
+	attributeName=LastGcInfo	type=javax.management.openmbean.CompositeData
+	attributeName=CollectionCount	type=long
+	attributeName=CollectionTime	type=long
+	attributeName=MemoryPoolNames	type=[Ljava.lang.String;
+	attributeName=Name	type=java.lang.String
+	attributeName=Valid	type=boolean
+	attributeName=ObjectName	type=javax.management.ObjectName
+"kafka.network":type="RequestMetrics",name="ControlledShutdown-ResponseSendTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="reliabilityTopic-0-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="traceRouteTopic-2-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Fetch-Consumer-RequestsPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.cluster":type="Partition",name="tcpTopic-0-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.cluster":type="Partition",name="udpTopic-1-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.cluster":type="Partition",name="reliabilityTopic-0-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.server":type="BrokerTopicMetrics",name="AllTopicsMessagesInPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.server":type="BrokerTopicMetrics",name="AllTopicsBytesOutPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.log":type="Log",name="pingTopic-1-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="smtpTopic-0-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.cluster":type="Partition",name="pingTopic-0-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="timerTopic-0-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="ControlledShutdown-LocalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="Fetch-Follower-ResponseQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="Fetch-RequestQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="siteviewTopic-0-Size"
+	attributeName=Value	type=java.lang.Object
+java.nio:type=BufferPool,name=direct
+	attributeName=Count	type=long
+	attributeName=MemoryUsed	type=long
+	attributeName=TotalCapacity	type=long
+	attributeName=Name	type=java.lang.String
+	attributeName=ObjectName	type=javax.management.ObjectName
+"kafka.log":type="Log",name="reliabilityTopic-0-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Metadata-RequestsPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.network":type="RequestMetrics",name="Fetch-Consumer-TotalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="OffsetCommit-LocalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.server":type="ProducerRequestPurgatory",name="NumDelayedRequests"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="reliabilityTopic-2-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="pingTopic-2-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="udpTopic-2-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Produce-ResponseSendTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.server":type="BrokerTopicMetrics",name="AllTopicsLogBytesAppendedPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.log":type="Log",name="apiTopic-2-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="dnsTopic-0-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="LeaderAndIsr-RequestQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.server":type="ReplicaManager",name="IsrShrinksPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.log":type="Log",name="pingTopic-1-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="OffsetCommit-ResponseQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="reliabilityTopic-1-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="LeaderAndIsr-LocalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.cluster":type="Partition",name="siteviewTopic-2-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Offsets-ResponseQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.server":type="BrokerTopicMetrics",name="AllTopicsBytesInPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.log":type="Log",name="smtpTopic-2-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="apiTopic-1-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="OffsetCommit-ResponseSendTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="StopReplica-RemoteTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestChannel",name="RequestQueueSize"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="reliabilityTopic-2-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="siteTopic-2-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Metadata-RemoteTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="OffsetFetch-RequestQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="UpdateMetadata-ResponseSendTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="siteviewTopic-2-Size"
+	attributeName=Value	type=java.lang.Object
+java.lang:type=ClassLoading
+	attributeName=LoadedClassCount	type=int
+	attributeName=TotalLoadedClassCount	type=long
+	attributeName=UnloadedClassCount	type=long
+	attributeName=Verbose	type=boolean
+	attributeName=ObjectName	type=javax.management.ObjectName
+"kafka.cluster":type="Partition",name="udpTopic-2-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+java.lang:type=Threading
+	attributeName=ThreadAllocatedMemoryEnabled	type=boolean
+	attributeName=ThreadAllocatedMemorySupported	type=boolean
+	attributeName=AllThreadIds	type=[J
+	attributeName=CurrentThreadCpuTime	type=long
+	attributeName=CurrentThreadUserTime	type=long
+	attributeName=ThreadCount	type=int
+	attributeName=TotalStartedThreadCount	type=long
+	attributeName=ThreadCpuTimeSupported	type=boolean
+	attributeName=ThreadCpuTimeEnabled	type=boolean
+	attributeName=DaemonThreadCount	type=int
+	attributeName=PeakThreadCount	type=int
+	attributeName=CurrentThreadCpuTimeSupported	type=boolean
+	attributeName=ObjectMonitorUsageSupported	type=boolean
+	attributeName=SynchronizerUsageSupported	type=boolean
+	attributeName=ThreadContentionMonitoringEnabled	type=boolean
+	attributeName=ThreadContentionMonitoringSupported	type=boolean
+	attributeName=ObjectName	type=javax.management.ObjectName
+"kafka.log":type="Log",name="smtpTopic-0-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="LeaderAndIsr-RemoteTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="traceRouteTopic-0-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Offsets-TotalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="Metadata-ResponseQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.controller":type="ControllerStats",name="LeaderElectionRateAndTimeMs"
+	attributeName=LatencyUnit	type=java.util.concurrent.TimeUnit
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.cluster":type="Partition",name="dnsTopic-1-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="timerTopic-1-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="apiTopic-0-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="siteviewTopic-1-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.server":type="ReplicaManager",name="UnderReplicatedPartitions"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Metadata-LocalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="Fetch-Follower-ResponseSendTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="siteTopic-1-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="timerTopic-2-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.server":type="DelayedProducerRequestMetrics",name="AllExpiresPerSecond"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.log":type="Log",name="siteviewTopic-0-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="traceRouteTopic-2-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Fetch-ResponseQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="UpdateMetadata-TotalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.cluster":type="Partition",name="reliabilityTopic-2-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="traceRouteTopic-1-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.server":type="ReplicaFetcherManager",name="Replica-MaxLag"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="smtpTopic-1-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="UpdateMetadata-LocalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+java.lang:type=MemoryManager,name=CodeCacheManager
+	attributeName=MemoryPoolNames	type=[Ljava.lang.String;
+	attributeName=Name	type=java.lang.String
+	attributeName=Valid	type=boolean
+	attributeName=ObjectName	type=javax.management.ObjectName
+"kafka.log":type="Log",name="tcpTopic-2-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.server":type="DelayedFetchRequestMetrics",name="FollowerExpiresPerSecond"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.log":type="Log",name="apiTopic-0-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+java.lang:type=GarbageCollector,name=ParNew
+	attributeName=LastGcInfo	type=javax.management.openmbean.CompositeData
+	attributeName=CollectionCount	type=long
+	attributeName=CollectionTime	type=long
+	attributeName=MemoryPoolNames	type=[Ljava.lang.String;
+	attributeName=Name	type=java.lang.String
+	attributeName=Valid	type=boolean
+	attributeName=ObjectName	type=javax.management.ObjectName
+"kafka.network":type="RequestMetrics",name="Offsets-ResponseSendTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="Fetch-Follower-TotalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="traceRouteTopic-0-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.controller":type="ControllerStats",name="UncleanLeaderElectionsPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.network":type="RequestMetrics",name="LeaderAndIsr-RequestsPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.network":type="RequestMetrics",name="Fetch-Consumer-ResponseQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="tcpTopic-2-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="pingTopic-0-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Fetch-Consumer-RequestQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="Produce-RemoteTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="OffsetFetch-ResponseSendTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.server":type="BrokerTopicMetrics",name="AllTopicsFailedProduceRequestsPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.network":type="RequestMetrics",name="OffsetFetch-LocalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.cluster":type="Partition",name="tcpTopic-2-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.cluster":type="Partition",name="pingTopic-1-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.cluster":type="Partition",name="apiTopic-2-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Metadata-TotalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="smtpTopic-1-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.cluster":type="Partition",name="apiTopic-0-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="udpTopic-1-NumLogSegments"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="StopReplica-RequestsPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.log":type="Log",name="siteTopic-0-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="LeaderAndIsr-TotalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+java.lang:type=OperatingSystem
+	attributeName=MaxFileDescriptorCount	type=long
+	attributeName=OpenFileDescriptorCount	type=long
+	attributeName=CommittedVirtualMemorySize	type=long
+	attributeName=FreePhysicalMemorySize	type=long
+	attributeName=FreeSwapSpaceSize	type=long
+	attributeName=ProcessCpuLoad	type=double
+	attributeName=ProcessCpuTime	type=long
+	attributeName=SystemCpuLoad	type=double
+	attributeName=TotalPhysicalMemorySize	type=long
+	attributeName=TotalSwapSpaceSize	type=long
+	attributeName=Arch	type=java.lang.String
+	attributeName=SystemLoadAverage	type=double
+	attributeName=Version	type=java.lang.String
+	attributeName=AvailableProcessors	type=int
+	attributeName=Name	type=java.lang.String
+	attributeName=ObjectName	type=javax.management.ObjectName
+"kafka.cluster":type="Partition",name="siteviewTopic-1-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="UpdateMetadata-RequestsPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.network":type="RequestMetrics",name="Metadata-RequestQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="UpdateMetadata-ResponseQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="OffsetCommit-TotalTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="Fetch-RequestsPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.log":type="Log",name="timerTopic-0-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="apiTopic-1-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="smtpTopic-1-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="LeaderAndIsr-ResponseQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.network":type="RequestMetrics",name="Fetch-Consumer-ResponseSendTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.server":type="ProducerRequestPurgatory",name="PurgatorySize"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="siteTopic-2-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.log":type="Log",name="timerTopic-2-Size"
+	attributeName=Value	type=java.lang.Object
+"kafka.cluster":type="Partition",name="smtpTopic-0-UnderReplicated"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Offsets-RequestQueueTimeMs"
+	attributeName=Max	type=double
+	attributeName=Count	type=long
+	attributeName=Min	type=double
+	attributeName=StdDev	type=double
+	attributeName=75thPercentile	type=double
+	attributeName=Mean	type=double
+	attributeName=95thPercentile	type=double
+	attributeName=98thPercentile	type=double
+	attributeName=99thPercentile	type=double
+	attributeName=999thPercentile	type=double
+	attributeName=50thPercentile	type=double
+"kafka.log":type="Log",name="apiTopic-2-LogEndOffset"
+	attributeName=Value	type=java.lang.Object
+"kafka.server":type="ReplicaManager",name="PartitionCount"
+	attributeName=Value	type=java.lang.Object
+"kafka.network":type="RequestMetrics",name="Fetch-Follower-RequestsPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+"kafka.server":type="BrokerTopicMetrics",name="AllTopicsFailedFetchRequestsPerSec"
+	attributeName=Count	type=long
+	attributeName=RateUnit	type=java.util.concurrent.TimeUnit
+	attributeName=EventType	type=java.lang.String
+	attributeName=MeanRate	type=double
+	attributeName=OneMinuteRate	type=double
+	attributeName=FiveMinuteRate	type=double
+	attributeName=FifteenMinuteRate	type=double
+JMImplementation:type=MBeanServerDelegate
+	attributeName=MBeanServerId	type=java.lang.String
+	attributeName=SpecificationName	type=java.lang.String
+	attributeName=SpecificationVersion	type=java.lang.String
+	attributeName=SpecificationVendor	type=java.lang.String
+	attributeName=ImplementationName	type=java.lang.String
+	attributeName=ImplementationVersion	type=java.lang.String
+	attributeName=ImplementationVendor	type=java.lang.String
+
+ObjectName="kafka.log":type="Log",name="tcpTopic-1-NumLogSegments"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.server":type="DelayedFetchRequestMetrics",name="ConsumerExpiresPerSecond"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.server":type="DelayedFetchRequestMetrics",name="ConsumerExpiresPerSecond"	AttributeName=RateUnit	writable=false	readable=true
+SECONDS
+
+ObjectName="kafka.server":type="DelayedFetchRequestMetrics",name="ConsumerExpiresPerSecond"	AttributeName=EventType	writable=false	readable=true
+requests
+
+ObjectName="kafka.server":type="DelayedFetchRequestMetrics",name="ConsumerExpiresPerSecond"	AttributeName=MeanRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.server":type="DelayedFetchRequestMetrics",name="ConsumerExpiresPerSecond"	AttributeName=OneMinuteRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.server":type="DelayedFetchRequestMetrics",name="ConsumerExpiresPerSecond"	AttributeName=FiveMinuteRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.server":type="DelayedFetchRequestMetrics",name="ConsumerExpiresPerSecond"	AttributeName=FifteenMinuteRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.log":type="Log",name="tcpTopic-0-LogEndOffset"	AttributeName=Value	writable=false	readable=true
+0
+
+ObjectName="kafka.log":type="Log",name="reliabilityTopic-1-LogEndOffset"	AttributeName=Value	writable=false	readable=true
+0
+
+ObjectName="kafka.log":type="Log",name="dnsTopic-0-LogEndOffset"	AttributeName=Value	writable=false	readable=true
+1276
+
+ObjectName=java.lang:type=MemoryPool,name=Par Eden Space	AttributeName=CollectionUsage	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=Par Eden Space	AttributeName=CollectionUsageThreshold	writable=true	readable=true
+0
+
+ObjectName=java.lang:type=MemoryPool,name=Par Eden Space	AttributeName=CollectionUsageThresholdCount	writable=false	readable=true
+0
+
+ObjectName=java.lang:type=MemoryPool,name=Par Eden Space	AttributeName=MemoryManagerNames	writable=false	readable=true
+ConcurrentMarkSweepParNew
+
+ObjectName=java.lang:type=MemoryPool,name=Par Eden Space	AttributeName=PeakUsage	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=Par Eden Space	AttributeName=Usage	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=Par Eden Space	AttributeName=UsageThreshold	writable=true	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=Par Eden Space	AttributeName=UsageThresholdCount	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=Par Eden Space	AttributeName=CollectionUsageThresholdExceeded	writable=false	readable=true
+false
+
+ObjectName=java.lang:type=MemoryPool,name=Par Eden Space	AttributeName=CollectionUsageThresholdSupported	writable=false	readable=true
+true
+
+ObjectName=java.lang:type=MemoryPool,name=Par Eden Space	AttributeName=UsageThresholdExceeded	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=Par Eden Space	AttributeName=UsageThresholdSupported	writable=false	readable=true
+false
+
+ObjectName=java.lang:type=MemoryPool,name=Par Eden Space	AttributeName=Name	writable=false	readable=true
+Par Eden Space
+
+ObjectName=java.lang:type=MemoryPool,name=Par Eden Space	AttributeName=Type	writable=false	readable=true
+HEAP
+
+ObjectName=java.lang:type=MemoryPool,name=Par Eden Space	AttributeName=Valid	writable=false	readable=true
+true
+
+ObjectName=java.lang:type=MemoryPool,name=Par Eden Space	AttributeName=ObjectName	writable=false	readable=true
+null
+
+ObjectName="kafka.log":type="Log",name="apiTopic-0-Size"	AttributeName=Value	writable=false	readable=true
+2771772
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RequestsPerSec"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RequestsPerSec"	AttributeName=RateUnit	writable=false	readable=true
+SECONDS
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RequestsPerSec"	AttributeName=EventType	writable=false	readable=true
+requests
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RequestsPerSec"	AttributeName=MeanRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RequestsPerSec"	AttributeName=OneMinuteRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RequestsPerSec"	AttributeName=FiveMinuteRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RequestsPerSec"	AttributeName=FifteenMinuteRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.log":type="Log",name="tcpTopic-2-Size"	AttributeName=Value	writable=false	readable=true
+503
+
+ObjectName="kafka.cluster":type="Partition",name="tcpTopic-1-UnderReplicated"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.cluster":type="Partition",name="udpTopic-0-UnderReplicated"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.cluster":type="Partition",name="traceRouteTopic-1-UnderReplicated"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.log":type="Log",name="udpTopic-0-NumLogSegments"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.cluster":type="Partition",name="timerTopic-0-UnderReplicated"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName=java.lang:type=MemoryPool,name=Code Cache	AttributeName=CollectionUsage	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=Code Cache	AttributeName=CollectionUsageThreshold	writable=true	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=Code Cache	AttributeName=CollectionUsageThresholdCount	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=Code Cache	AttributeName=MemoryManagerNames	writable=false	readable=true
+CodeCacheManager
+
+ObjectName=java.lang:type=MemoryPool,name=Code Cache	AttributeName=PeakUsage	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=Code Cache	AttributeName=Usage	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=Code Cache	AttributeName=UsageThreshold	writable=true	readable=true
+0
+
+ObjectName=java.lang:type=MemoryPool,name=Code Cache	AttributeName=UsageThresholdCount	writable=false	readable=true
+0
+
+ObjectName=java.lang:type=MemoryPool,name=Code Cache	AttributeName=CollectionUsageThresholdExceeded	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=Code Cache	AttributeName=CollectionUsageThresholdSupported	writable=false	readable=true
+false
+
+ObjectName=java.lang:type=MemoryPool,name=Code Cache	AttributeName=UsageThresholdExceeded	writable=false	readable=true
+false
+
+ObjectName=java.lang:type=MemoryPool,name=Code Cache	AttributeName=UsageThresholdSupported	writable=false	readable=true
+true
+
+ObjectName=java.lang:type=MemoryPool,name=Code Cache	AttributeName=Name	writable=false	readable=true
+Code Cache
+
+ObjectName=java.lang:type=MemoryPool,name=Code Cache	AttributeName=Type	writable=false	readable=true
+NON_HEAP
+
+ObjectName=java.lang:type=MemoryPool,name=Code Cache	AttributeName=Valid	writable=false	readable=true
+true
+
+ObjectName=java.lang:type=MemoryPool,name=Code Cache	AttributeName=ObjectName	writable=false	readable=true
+null
+
+ObjectName="kafka.log":type="Log",name="udpTopic-2-NumLogSegments"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.cluster":type="Partition",name="siteTopic-2-UnderReplicated"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Consumer-RemoteTimeMs"	AttributeName=Max	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Consumer-RemoteTimeMs"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Consumer-RemoteTimeMs"	AttributeName=Min	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Consumer-RemoteTimeMs"	AttributeName=StdDev	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Consumer-RemoteTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Consumer-RemoteTimeMs"	AttributeName=Mean	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Consumer-RemoteTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Consumer-RemoteTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Consumer-RemoteTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Consumer-RemoteTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Consumer-RemoteTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-RequestQueueTimeMs"	AttributeName=Max	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-RequestQueueTimeMs"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-RequestQueueTimeMs"	AttributeName=Min	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-RequestQueueTimeMs"	AttributeName=StdDev	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-RequestQueueTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-RequestQueueTimeMs"	AttributeName=Mean	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-RequestQueueTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-RequestQueueTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-RequestQueueTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-RequestQueueTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-RequestQueueTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-RequestsPerSec"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-RequestsPerSec"	AttributeName=RateUnit	writable=false	readable=true
+SECONDS
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-RequestsPerSec"	AttributeName=EventType	writable=false	readable=true
+requests
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-RequestsPerSec"	AttributeName=MeanRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-RequestsPerSec"	AttributeName=OneMinuteRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-RequestsPerSec"	AttributeName=FiveMinuteRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-RequestsPerSec"	AttributeName=FifteenMinuteRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.log":type="Log",name="siteTopic-0-Size"	AttributeName=Value	writable=false	readable=true
+0
+
+ObjectName="kafka.log":type="Log",name="reliabilityTopic-0-NumLogSegments"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RequestQueueTimeMs"	AttributeName=Max	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RequestQueueTimeMs"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RequestQueueTimeMs"	AttributeName=Min	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RequestQueueTimeMs"	AttributeName=StdDev	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RequestQueueTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RequestQueueTimeMs"	AttributeName=Mean	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RequestQueueTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RequestQueueTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RequestQueueTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RequestQueueTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RequestQueueTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-TotalTimeMs"	AttributeName=Max	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-TotalTimeMs"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-TotalTimeMs"	AttributeName=Min	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-TotalTimeMs"	AttributeName=StdDev	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-TotalTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-TotalTimeMs"	AttributeName=Mean	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-TotalTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-TotalTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-TotalTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-TotalTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-TotalTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.cluster":type="Partition",name="siteTopic-0-UnderReplicated"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.cluster":type="Partition",name="apiTopic-1-UnderReplicated"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName=java.lang:type=Memory	AttributeName=HeapMemoryUsage	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=Memory	AttributeName=NonHeapMemoryUsage	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=Memory	AttributeName=ObjectPendingFinalizationCount	writable=false	readable=true
+0
+
+ObjectName=java.lang:type=Memory	AttributeName=Verbose	writable=true	readable=true
+true
+
+ObjectName=java.lang:type=Memory	AttributeName=ObjectName	writable=false	readable=true
+null
+
+ObjectName="kafka.cluster":type="Partition",name="timerTopic-1-UnderReplicated"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.log":type="Log",name="dnsTopic-1-NumLogSegments"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-RequestQueueTimeMs"	AttributeName=Max	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-RequestQueueTimeMs"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-RequestQueueTimeMs"	AttributeName=Min	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-RequestQueueTimeMs"	AttributeName=StdDev	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-RequestQueueTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-RequestQueueTimeMs"	AttributeName=Mean	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-RequestQueueTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-RequestQueueTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-RequestQueueTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-RequestQueueTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-RequestQueueTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.log":type="Log",name="smtpTopic-2-LogEndOffset"	AttributeName=Value	writable=false	readable=true
+702
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-ResponseSendTimeMs"	AttributeName=Max	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-ResponseSendTimeMs"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-ResponseSendTimeMs"	AttributeName=Min	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-ResponseSendTimeMs"	AttributeName=StdDev	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-ResponseSendTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-ResponseSendTimeMs"	AttributeName=Mean	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-ResponseSendTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-ResponseSendTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-ResponseSendTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-ResponseSendTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-ResponseSendTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.cluster":type="Partition",name="dnsTopic-0-UnderReplicated"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.log":type="Log",name="siteviewTopic-1-LogEndOffset"	AttributeName=Value	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-LocalTimeMs"	AttributeName=Max	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-LocalTimeMs"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-LocalTimeMs"	AttributeName=Min	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-LocalTimeMs"	AttributeName=StdDev	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-LocalTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-LocalTimeMs"	AttributeName=Mean	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-LocalTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-LocalTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-LocalTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-LocalTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-LocalTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RemoteTimeMs"	AttributeName=Max	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RemoteTimeMs"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RemoteTimeMs"	AttributeName=Min	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RemoteTimeMs"	AttributeName=StdDev	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RemoteTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RemoteTimeMs"	AttributeName=Mean	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RemoteTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RemoteTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RemoteTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RemoteTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetCommit-RemoteTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.log":type="Log",name="dnsTopic-1-LogEndOffset"	AttributeName=Value	writable=false	readable=true
+1091
+
+ObjectName="kafka.log":type="Log",name="pingTopic-2-Size"	AttributeName=Value	writable=false	readable=true
+166446
+
+ObjectName="kafka.log":type="Log",name="siteviewTopic-1-NumLogSegments"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-TotalTimeMs"	AttributeName=Max	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-TotalTimeMs"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-TotalTimeMs"	AttributeName=Min	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-TotalTimeMs"	AttributeName=StdDev	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-TotalTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-TotalTimeMs"	AttributeName=Mean	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-TotalTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-TotalTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-TotalTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-TotalTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-TotalTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.server":type="ReplicaManager",name="LeaderCount"	AttributeName=Value	writable=false	readable=true
+32
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-ResponseQueueTimeMs"	AttributeName=Max	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-ResponseQueueTimeMs"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-ResponseQueueTimeMs"	AttributeName=Min	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-ResponseQueueTimeMs"	AttributeName=StdDev	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-ResponseQueueTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-ResponseQueueTimeMs"	AttributeName=Mean	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-ResponseQueueTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-ResponseQueueTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-ResponseQueueTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-ResponseQueueTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-ResponseQueueTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.log":type="Log",name="tcpTopic-1-Size"	AttributeName=Value	writable=false	readable=true
+252
+
+ObjectName="kafka.log":type="Log",name="pingTopic-0-NumLogSegments"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.log":type="Log",name="apiTopic-2-NumLogSegments"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.log":type="Log",name="siteviewTopic-2-LogEndOffset"	AttributeName=Value	writable=false	readable=true
+0
+
+ObjectName="kafka.log":type="Log",name="siteTopic-2-NumLogSegments"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-TotalTimeMs"	AttributeName=Max	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-TotalTimeMs"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-TotalTimeMs"	AttributeName=Min	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-TotalTimeMs"	AttributeName=StdDev	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-TotalTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-TotalTimeMs"	AttributeName=Mean	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-TotalTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-TotalTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-TotalTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-TotalTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-TotalTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Offsets-RemoteTimeMs"	AttributeName=Max	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Offsets-RemoteTimeMs"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Offsets-RemoteTimeMs"	AttributeName=Min	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Offsets-RemoteTimeMs"	AttributeName=StdDev	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Offsets-RemoteTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Offsets-RemoteTimeMs"	AttributeName=Mean	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Offsets-RemoteTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Offsets-RemoteTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Offsets-RemoteTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Offsets-RemoteTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Offsets-RemoteTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.log":type="Log",name="timerTopic-1-LogEndOffset"	AttributeName=Value	writable=false	readable=true
+0
+
+ObjectName="kafka.log":type="Log",name="traceRouteTopic-0-NumLogSegments"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.network":type="RequestMetrics",name="Offsets-RequestsPerSec"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Offsets-RequestsPerSec"	AttributeName=RateUnit	writable=false	readable=true
+SECONDS
+
+ObjectName="kafka.network":type="RequestMetrics",name="Offsets-RequestsPerSec"	AttributeName=EventType	writable=false	readable=true
+requests
+
+ObjectName="kafka.network":type="RequestMetrics",name="Offsets-RequestsPerSec"	AttributeName=MeanRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Offsets-RequestsPerSec"	AttributeName=OneMinuteRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Offsets-RequestsPerSec"	AttributeName=FiveMinuteRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Offsets-RequestsPerSec"	AttributeName=FifteenMinuteRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-LocalTimeMs"	AttributeName=Max	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-LocalTimeMs"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-LocalTimeMs"	AttributeName=Min	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-LocalTimeMs"	AttributeName=StdDev	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-LocalTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-LocalTimeMs"	AttributeName=Mean	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-LocalTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-LocalTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-LocalTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-LocalTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-LocalTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.log":type="Log",name="dnsTopic-1-Size"	AttributeName=Value	writable=false	readable=true
+283712
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseSendTimeMs"	AttributeName=Max	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseSendTimeMs"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseSendTimeMs"	AttributeName=Min	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseSendTimeMs"	AttributeName=StdDev	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseSendTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseSendTimeMs"	AttributeName=Mean	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseSendTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseSendTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseSendTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseSendTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseSendTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.log":type="Log",name="timerTopic-1-NumLogSegments"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.log":type="Log",name="traceRouteTopic-2-NumLogSegments"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.log":type="Log",name="reliabilityTopic-2-Size"	AttributeName=Value	writable=false	readable=true
+0
+
+ObjectName="kafka.log":type="Log",name="udpTopic-0-LogEndOffset"	AttributeName=Value	writable=false	readable=true
+681
+
+ObjectName="kafka.log":type="Log",name="udpTopic-1-Size"	AttributeName=Value	writable=false	readable=true
+175736
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-TotalTimeMs"	AttributeName=Max	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-TotalTimeMs"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-TotalTimeMs"	AttributeName=Min	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-TotalTimeMs"	AttributeName=StdDev	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-TotalTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-TotalTimeMs"	AttributeName=Mean	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-TotalTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-TotalTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-TotalTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-TotalTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="ControlledShutdown-TotalTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.cluster":type="Partition",name="reliabilityTopic-1-UnderReplicated"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.server":type="FetchRequestPurgatory",name="PurgatorySize"	AttributeName=Value	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="LeaderAndIsr-ResponseSendTimeMs"	AttributeName=Max	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="LeaderAndIsr-ResponseSendTimeMs"	AttributeName=Count	writable=false	readable=true
+2
+
+ObjectName="kafka.network":type="RequestMetrics",name="LeaderAndIsr-ResponseSendTimeMs"	AttributeName=Min	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="LeaderAndIsr-ResponseSendTimeMs"	AttributeName=StdDev	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="LeaderAndIsr-ResponseSendTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="LeaderAndIsr-ResponseSendTimeMs"	AttributeName=Mean	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="LeaderAndIsr-ResponseSendTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="LeaderAndIsr-ResponseSendTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="LeaderAndIsr-ResponseSendTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="LeaderAndIsr-ResponseSendTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="LeaderAndIsr-ResponseSendTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.log":type="Log",name="siteTopic-1-Size"	AttributeName=Value	writable=false	readable=true
+0
+
+ObjectName="kafka.log":type="Log",name="udpTopic-2-Size"	AttributeName=Value	writable=false	readable=true
+168901
+
+ObjectName="kafka.log":type="Log",name="reliabilityTopic-1-Size"	AttributeName=Value	writable=false	readable=true
+0
+
+ObjectName="kafka.cluster":type="Partition",name="siteviewTopic-0-UnderReplicated"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName=java.nio:type=BufferPool,name=mapped	AttributeName=Count	writable=false	readable=true
+32
+
+ObjectName=java.nio:type=BufferPool,name=mapped	AttributeName=MemoryUsed	writable=false	readable=true
+335544320
+
+ObjectName=java.nio:type=BufferPool,name=mapped	AttributeName=TotalCapacity	writable=false	readable=true
+335544320
+
+ObjectName=java.nio:type=BufferPool,name=mapped	AttributeName=Name	writable=false	readable=true
+mapped
+
+ObjectName=java.nio:type=BufferPool,name=mapped	AttributeName=ObjectName	writable=false	readable=true
+null
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetFetch-RequestsPerSec"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetFetch-RequestsPerSec"	AttributeName=RateUnit	writable=false	readable=true
+SECONDS
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetFetch-RequestsPerSec"	AttributeName=EventType	writable=false	readable=true
+requests
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetFetch-RequestsPerSec"	AttributeName=MeanRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetFetch-RequestsPerSec"	AttributeName=OneMinuteRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetFetch-RequestsPerSec"	AttributeName=FiveMinuteRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetFetch-RequestsPerSec"	AttributeName=FifteenMinuteRate	writable=false	readable=true
+0.0
+
+ObjectName=java.lang:type=Compilation	AttributeName=TotalCompilationTime	writable=false	readable=true
+69766
+
+ObjectName=java.lang:type=Compilation	AttributeName=CompilationTimeMonitoringSupported	writable=false	readable=true
+true
+
+ObjectName=java.lang:type=Compilation	AttributeName=Name	writable=false	readable=true
+HotSpot 64-Bit Tiered Compilers
+
+ObjectName=java.lang:type=Compilation	AttributeName=ObjectName	writable=false	readable=true
+null
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-ResponseQueueTimeMs"	AttributeName=Max	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-ResponseQueueTimeMs"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-ResponseQueueTimeMs"	AttributeName=Min	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-ResponseQueueTimeMs"	AttributeName=StdDev	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-ResponseQueueTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-ResponseQueueTimeMs"	AttributeName=Mean	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-ResponseQueueTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-ResponseQueueTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-ResponseQueueTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-ResponseQueueTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Produce-ResponseQueueTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.log":type="Log",name="udpTopic-0-Size"	AttributeName=Value	writable=false	readable=true
+162902
+
+ObjectName="kafka.cluster":type="Partition",name="pingTopic-2-UnderReplicated"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.server":type="ReplicaManager",name="IsrExpandsPerSec"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.server":type="ReplicaManager",name="IsrExpandsPerSec"	AttributeName=RateUnit	writable=false	readable=true
+SECONDS
+
+ObjectName="kafka.server":type="ReplicaManager",name="IsrExpandsPerSec"	AttributeName=EventType	writable=false	readable=true
+expands
+
+ObjectName="kafka.server":type="ReplicaManager",name="IsrExpandsPerSec"	AttributeName=MeanRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.server":type="ReplicaManager",name="IsrExpandsPerSec"	AttributeName=OneMinuteRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.server":type="ReplicaManager",name="IsrExpandsPerSec"	AttributeName=FiveMinuteRate	writable=false	readable=true
+0.0
+
+ObjectName="kafka.server":type="ReplicaManager",name="IsrExpandsPerSec"	AttributeName=FifteenMinuteRate	writable=false	readable=true
+0.0
+
+ObjectName=java.lang:type=MemoryPool,name=CMS Perm Gen	AttributeName=CollectionUsage	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=CMS Perm Gen	AttributeName=CollectionUsageThreshold	writable=true	readable=true
+0
+
+ObjectName=java.lang:type=MemoryPool,name=CMS Perm Gen	AttributeName=CollectionUsageThresholdCount	writable=false	readable=true
+0
+
+ObjectName=java.lang:type=MemoryPool,name=CMS Perm Gen	AttributeName=MemoryManagerNames	writable=false	readable=true
+ConcurrentMarkSweep
+
+ObjectName=java.lang:type=MemoryPool,name=CMS Perm Gen	AttributeName=PeakUsage	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=CMS Perm Gen	AttributeName=Usage	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=CMS Perm Gen	AttributeName=UsageThreshold	writable=true	readable=true
+0
+
+ObjectName=java.lang:type=MemoryPool,name=CMS Perm Gen	AttributeName=UsageThresholdCount	writable=false	readable=true
+0
+
+ObjectName=java.lang:type=MemoryPool,name=CMS Perm Gen	AttributeName=CollectionUsageThresholdExceeded	writable=false	readable=true
+false
+
+ObjectName=java.lang:type=MemoryPool,name=CMS Perm Gen	AttributeName=CollectionUsageThresholdSupported	writable=false	readable=true
+true
+
+ObjectName=java.lang:type=MemoryPool,name=CMS Perm Gen	AttributeName=UsageThresholdExceeded	writable=false	readable=true
+false
+
+ObjectName=java.lang:type=MemoryPool,name=CMS Perm Gen	AttributeName=UsageThresholdSupported	writable=false	readable=true
+true
+
+ObjectName=java.lang:type=MemoryPool,name=CMS Perm Gen	AttributeName=Name	writable=false	readable=true
+CMS Perm Gen
+
+ObjectName=java.lang:type=MemoryPool,name=CMS Perm Gen	AttributeName=Type	writable=false	readable=true
+NON_HEAP
+
+ObjectName=java.lang:type=MemoryPool,name=CMS Perm Gen	AttributeName=Valid	writable=false	readable=true
+true
+
+ObjectName=java.lang:type=MemoryPool,name=CMS Perm Gen	AttributeName=ObjectName	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=Par Survivor Space	AttributeName=CollectionUsage	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=Par Survivor Space	AttributeName=CollectionUsageThreshold	writable=true	readable=true
+0
+
+ObjectName=java.lang:type=MemoryPool,name=Par Survivor Space	AttributeName=CollectionUsageThresholdCount	writable=false	readable=true
+0
+
+ObjectName=java.lang:type=MemoryPool,name=Par Survivor Space	AttributeName=MemoryManagerNames	writable=false	readable=true
+ConcurrentMarkSweepParNew
+
+ObjectName=java.lang:type=MemoryPool,name=Par Survivor Space	AttributeName=PeakUsage	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=Par Survivor Space	AttributeName=Usage	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=Par Survivor Space	AttributeName=UsageThreshold	writable=true	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=Par Survivor Space	AttributeName=UsageThresholdCount	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=Par Survivor Space	AttributeName=CollectionUsageThresholdExceeded	writable=false	readable=true
+false
+
+ObjectName=java.lang:type=MemoryPool,name=Par Survivor Space	AttributeName=CollectionUsageThresholdSupported	writable=false	readable=true
+true
+
+ObjectName=java.lang:type=MemoryPool,name=Par Survivor Space	AttributeName=UsageThresholdExceeded	writable=false	readable=true
+null
+
+ObjectName=java.lang:type=MemoryPool,name=Par Survivor Space	AttributeName=UsageThresholdSupported	writable=false	readable=true
+false
+
+ObjectName=java.lang:type=MemoryPool,name=Par Survivor Space	AttributeName=Name	writable=false	readable=true
+Par Survivor Space
+
+ObjectName=java.lang:type=MemoryPool,name=Par Survivor Space	AttributeName=Type	writable=false	readable=true
+HEAP
+
+ObjectName=java.lang:type=MemoryPool,name=Par Survivor Space	AttributeName=Valid	writable=false	readable=true
+true
+
+ObjectName=java.lang:type=MemoryPool,name=Par Survivor Space	AttributeName=ObjectName	writable=false	readable=true
+null
+
+ObjectName="kafka.log":type="Log",name="pingTopic-2-LogEndOffset"	AttributeName=Value	writable=false	readable=true
+722
+
+ObjectName="kafka.log":type="Log",name="timerTopic-0-LogEndOffset"	AttributeName=Value	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-RequestQueueTimeMs"	AttributeName=Max	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-RequestQueueTimeMs"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-RequestQueueTimeMs"	AttributeName=Min	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-RequestQueueTimeMs"	AttributeName=StdDev	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-RequestQueueTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-RequestQueueTimeMs"	AttributeName=Mean	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-RequestQueueTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-RequestQueueTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-RequestQueueTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-RequestQueueTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="Fetch-Follower-RequestQueueTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.cluster":type="Partition",name="timerTopic-2-UnderReplicated"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName=java.lang:type=Runtime	AttributeName=StartTime	writable=false	readable=true
+1407486947284
+
+ObjectName=java.lang:type=Runtime	AttributeName=InputArguments	writable=false	readable=true
+-Xmx1G-Xms1G-XX:+UseCompressedOops-XX:+UseParNewGC-XX:+UseConcMarkSweepGC-XX:+CMSClassUnloadingEnabled-XX:+CMSScavengeBeforeRemark-XX:+DisableExplicitGC-Djava.awt.headless=true-Xloggc:/root/kafka/bin/../logs/kafkaServer-gc.log-verbose:gc-XX:+PrintGCDetails-XX:+PrintGCDateStamps-XX:+PrintGCTimeStamps-Dcom.sun.management.jmxremote-Dcom.sun.management.jmxremote.port=9999-Dcom.sun.management.jmxremote.authenticate=false-Dcom.sun.management.jmxremote.ssl=false-Dkafka.logs.dir=/root/kafka/bin/../logs-Dlog4j.configuration=file:./bin/../config/log4j.properties
+
+ObjectName=java.lang:type=Runtime	AttributeName=ManagementSpecVersion	writable=false	readable=true
+1.2
+
+ObjectName=java.lang:type=Runtime	AttributeName=SpecName	writable=false	readable=true
+Java Virtual Machine Specification
+
+ObjectName=java.lang:type=Runtime	AttributeName=SpecVendor	writable=false	readable=true
+Oracle Corporation
+
+ObjectName=java.lang:type=Runtime	AttributeName=SpecVersion	writable=false	readable=true
+1.7
+
+ObjectName=java.lang:type=Runtime	AttributeName=SystemProperties	writable=false	readable=true
+[java.vm.version]=[java.vm.version, 24.51-b03]
+[java.vendor.url]=[java.vendor.url, http://java.oracle.com/]
+[sun.jnu.encoding]=[sun.jnu.encoding, UTF-8]
+[java.vm.info]=[java.vm.info, mixed mode]
+[java.awt.headless]=[java.awt.headless, true]
+[user.dir]=[user.dir, /root/kafka]
+[sun.cpu.isalist]=[sun.cpu.isalist, ]
+[java.awt.graphicsenv]=[java.awt.graphicsenv, sun.awt.X11GraphicsEnvironment]
+[com.sun.management.jmxremote.authenticate]=[com.sun.management.jmxremote.authenticate, false]
+[sun.os.patch.level]=[sun.os.patch.level, unknown]
+[com.sun.management.jmxremote.ssl]=[com.sun.management.jmxremote.ssl, false]
+[java.io.tmpdir]=[java.io.tmpdir, /tmp]
+[user.home]=[user.home, /root]
+[java.awt.printerjob]=[java.awt.printerjob, sun.print.PSPrinterJob]
+[java.version]=[java.version, 1.7.0_51]
+[file.encoding.pkg]=[file.encoding.pkg, sun.io]
+[java.vendor.url.bug]=[java.vendor.url.bug, http://bugreport.sun.com/bugreport/]
+[file.encoding]=[file.encoding, UTF-8]
+[line.separator]=[line.separator, 
+]
+[sun.java.command]=[sun.java.command, kafka.Kafka config/server.properties]
+[java.vm.specification.vendor]=[java.vm.specification.vendor, Oracle Corporation]
+[java.vm.vendor]=[java.vm.vendor, Oracle Corporation]
+[java.class.path]=[java.class.path, :/root/kafka/bin/../core/build/dependant-libs-2.8.0/*.jar:/root/kafka/bin/../perf/build/libs//kafka-perf_2.8.0*.jar:/root/kafka/bin/../clients/build/libs//kafka-clients*.jar:/root/kafka/bin/../examples/build/libs//kafka-examples*.jar:/root/kafka/bin/../contrib/hadoop-consumer/build/libs//kafka-hadoop-consumer*.jar:/root/kafka/bin/../contrib/hadoop-producer/build/libs//kafka-hadoop-producer*.jar:/root/kafka/bin/../libs/jopt-simple-3.2.jar:/root/kafka/bin/../libs/kafka_2.9.2-0.8.1.1.jar:/root/kafka/bin/../libs/kafka_2.9.2-0.8.1.1-javadoc.jar:/root/kafka/bin/../libs/kafka_2.9.2-0.8.1.1-scaladoc.jar:/root/kafka/bin/../libs/kafka_2.9.2-0.8.1.1-sources.jar:/root/kafka/bin/../libs/kafka-ganglia-1.0.0.jar:/root/kafka/bin/../libs/log4j-1.2.15.jar:/root/kafka/bin/../libs/metrics-core-2.2.0.jar:/root/kafka/bin/../libs/metrics-ganglia-2.2.0.jar:/root/kafka/bin/../libs/scala-library-2.9.2.jar:/root/kafka/bin/../libs/slf4j-api-1.7.2.jar:/root/kafka/bin/../libs/snappy-java-1.0.5.jar:/root/kafka/bin/../libs/zkclient-0.3.jar:/root/kafka/bin/../libs/zookeeper-3.3.4.jar:/root/kafka/bin/../core/build/libs/kafka_2.8.0*.jar]
+[sun.io.unicode.encoding]=[sun.io.unicode.encoding, UnicodeLittle]
+[os.arch]=[os.arch, amd64]
+[user.name]=[user.name, root]
+[user.language]=[user.language, en]
+[java.runtime.version]=[java.runtime.version, 1.7.0_51-b13]
+[sun.boot.class.path]=[sun.boot.class.path, /usr/local/jdk1.7.0_51/jre/lib/resources.jar:/usr/local/jdk1.7.0_51/jre/lib/rt.jar:/usr/local/jdk1.7.0_51/jre/lib/sunrsasign.jar:/usr/local/jdk1.7.0_51/jre/lib/jsse.jar:/usr/local/jdk1.7.0_51/jre/lib/jce.jar:/usr/local/jdk1.7.0_51/jre/lib/charsets.jar:/usr/local/jdk1.7.0_51/jre/lib/jfr.jar:/usr/local/jdk1.7.0_51/jre/classes]
+[kafka.logs.dir]=[kafka.logs.dir, /root/kafka/bin/../logs]
+[sun.cpu.endian]=[sun.cpu.endian, little]
+[awt.toolkit]=[awt.toolkit, sun.awt.X11.XToolkit]
+[sun.boot.library.path]=[sun.boot.library.path, /usr/local/jdk1.7.0_51/jre/lib/amd64]
+[java.vm.name]=[java.vm.name, Java HotSpot(TM) 64-Bit Server VM]
+[java.home]=[java.home, /usr/local/jdk1.7.0_51/jre]
+[java.endorsed.dirs]=[java.endorsed.dirs, /usr/local/jdk1.7.0_51/jre/lib/endorsed]
+[sun.management.compiler]=[sun.management.compiler, HotSpot 64-Bit Tiered Compilers]
+[java.runtime.name]=[java.runtime.name, Java(TM) SE Runtime Environment]
+[java.library.path]=[java.library.path, /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+[file.separator]=[file.separator, /]
+[java.specification.vendor]=[java.specification.vendor, Oracle Corporation]
+[java.rmi.server.randomIDs]=[java.rmi.server.randomIDs, true]
+[java.vm.specification.version]=[java.vm.specification.version, 1.7]
+[sun.java.launcher]=[sun.java.launcher, SUN_STANDARD]
+[user.timezone]=[user.timezone, Universal]
+[os.name]=[os.name, Linux]
+[path.separator]=[path.separator, :]
+[java.ext.dirs]=[java.ext.dirs, /usr/local/jdk1.7.0_51/jre/lib/ext:/usr/java/packages/lib/ext]
+[sun.arch.data.model]=[sun.arch.data.model, 64]
+[com.sun.management.jmxremote.port]=[com.sun.management.jmxremote.port, 9999]
+[log4j.configuration]=[log4j.configuration, file:./bin/../config/log4j.properties]
+[java.specification.name]=[java.specification.name, Java Platform API Specification]
+[os.version]=[os.version, 2.6.32-358.el6.x86_64]
+[com.sun.management.jmxremote]=[com.sun.management.jmxremote, ]
+[user.country]=[user.country, US]
+[java.class.version]=[java.class.version, 51.0]
+[java.vendor]=[java.vendor, Oracle Corporation]
+[java.vm.specification.name]=[java.vm.specification.name, Java Virtual Machine Specification]
+[java.specification.version]=[java.specification.version, 1.7]
+
+
+ObjectName=java.lang:type=Runtime	AttributeName=Uptime	writable=false	readable=true
+2884611
+
+ObjectName=java.lang:type=Runtime	AttributeName=BootClassPath	writable=false	readable=true
+/usr/local/jdk1.7.0_51/jre/lib/resources.jar:/usr/local/jdk1.7.0_51/jre/lib/rt.jar:/usr/local/jdk1.7.0_51/jre/lib/sunrsasign.jar:/usr/local/jdk1.7.0_51/jre/lib/jsse.jar:/usr/local/jdk1.7.0_51/jre/lib/jce.jar:/usr/local/jdk1.7.0_51/jre/lib/charsets.jar:/usr/local/jdk1.7.0_51/jre/lib/jfr.jar:/usr/local/jdk1.7.0_51/jre/classes
+
+ObjectName=java.lang:type=Runtime	AttributeName=LibraryPath	writable=false	readable=true
+/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+
+ObjectName=java.lang:type=Runtime	AttributeName=VmName	writable=false	readable=true
+Java HotSpot(TM) 64-Bit Server VM
+
+ObjectName=java.lang:type=Runtime	AttributeName=VmVendor	writable=false	readable=true
+Oracle Corporation
+
+ObjectName=java.lang:type=Runtime	AttributeName=VmVersion	writable=false	readable=true
+24.51-b03
+
+ObjectName=java.lang:type=Runtime	AttributeName=BootClassPathSupported	writable=false	readable=true
+true
+
+ObjectName=java.lang:type=Runtime	AttributeName=Name	writable=false	readable=true
+8342@dev-47
+
+ObjectName=java.lang:type=Runtime	AttributeName=ClassPath	writable=false	readable=true
+:/root/kafka/bin/../core/build/dependant-libs-2.8.0/*.jar:/root/kafka/bin/../perf/build/libs//kafka-perf_2.8.0*.jar:/root/kafka/bin/../clients/build/libs//kafka-clients*.jar:/root/kafka/bin/../examples/build/libs//kafka-examples*.jar:/root/kafka/bin/../contrib/hadoop-consumer/build/libs//kafka-hadoop-consumer*.jar:/root/kafka/bin/../contrib/hadoop-producer/build/libs//kafka-hadoop-producer*.jar:/root/kafka/bin/../libs/jopt-simple-3.2.jar:/root/kafka/bin/../libs/kafka_2.9.2-0.8.1.1.jar:/root/kafka/bin/../libs/kafka_2.9.2-0.8.1.1-javadoc.jar:/root/kafka/bin/../libs/kafka_2.9.2-0.8.1.1-scaladoc.jar:/root/kafka/bin/../libs/kafka_2.9.2-0.8.1.1-sources.jar:/root/kafka/bin/../libs/kafka-ganglia-1.0.0.jar:/root/kafka/bin/../libs/log4j-1.2.15.jar:/root/kafka/bin/../libs/metrics-core-2.2.0.jar:/root/kafka/bin/../libs/metrics-ganglia-2.2.0.jar:/root/kafka/bin/../libs/scala-library-2.9.2.jar:/root/kafka/bin/../libs/slf4j-api-1.7.2.jar:/root/kafka/bin/../libs/snappy-java-1.0.5.jar:/root/kafka/bin/../libs/zkclient-0.3.jar:/root/kafka/bin/../libs/zookeeper-3.3.4.jar:/root/kafka/bin/../core/build/libs/kafka_2.8.0*.jar
+
+ObjectName=java.lang:type=Runtime	AttributeName=ObjectName	writable=false	readable=true
+null
+
+ObjectName="kafka.network":type="RequestMetrics",name="UpdateMetadata-RequestQueueTimeMs"	AttributeName=Max	writable=false	readable=true
+2509.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="UpdateMetadata-RequestQueueTimeMs"	AttributeName=Count	writable=false	readable=true
+3
+
+ObjectName="kafka.network":type="RequestMetrics",name="UpdateMetadata-RequestQueueTimeMs"	AttributeName=Min	writable=false	readable=true
+17.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="UpdateMetadata-RequestQueueTimeMs"	AttributeName=StdDev	writable=false	readable=true
+1438.1798682130595
+
+ObjectName="kafka.network":type="RequestMetrics",name="UpdateMetadata-RequestQueueTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+2509.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="UpdateMetadata-RequestQueueTimeMs"	AttributeName=Mean	writable=false	readable=true
+848.3333333333334
+
+ObjectName="kafka.network":type="RequestMetrics",name="UpdateMetadata-RequestQueueTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+2509.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="UpdateMetadata-RequestQueueTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+2509.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="UpdateMetadata-RequestQueueTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+2509.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="UpdateMetadata-RequestQueueTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+2509.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="UpdateMetadata-RequestQueueTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+19.0
+
+ObjectName="kafka.cluster":type="Partition",name="traceRouteTopic-2-UnderReplicated"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetFetch-RemoteTimeMs"	AttributeName=Max	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetFetch-RemoteTimeMs"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetFetch-RemoteTimeMs"	AttributeName=Min	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetFetch-RemoteTimeMs"	AttributeName=StdDev	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetFetch-RemoteTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetFetch-RemoteTimeMs"	AttributeName=Mean	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetFetch-RemoteTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetFetch-RemoteTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetFetch-RemoteTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetFetch-RemoteTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="OffsetFetch-RemoteTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.cluster":type="Partition",name="traceRouteTopic-0-UnderReplicated"	AttributeName=Value	writable=false	readable=true
+1
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseQueueTimeMs"	AttributeName=Max	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseQueueTimeMs"	AttributeName=Count	writable=false	readable=true
+0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseQueueTimeMs"	AttributeName=Min	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseQueueTimeMs"	AttributeName=StdDev	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseQueueTimeMs"	AttributeName=75thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseQueueTimeMs"	AttributeName=Mean	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseQueueTimeMs"	AttributeName=95thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseQueueTimeMs"	AttributeName=98thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseQueueTimeMs"	AttributeName=99thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseQueueTimeMs"	AttributeName=999thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestMetrics",name="StopReplica-ResponseQueueTimeMs"	AttributeName=50thPercentile	writable=false	readable=true
+0.0
+
+ObjectName="kafka.network":type="RequestChannel",name="Processor-0-ResponseQueueSize"	AttributeName=Value	writable=false	readable=true
+0
+
+ObjectName="kafka.log":type="Log",name="tcpTopic-0-Size"	AttributeName=Value	writable=false	readable=true
+0
+
+ObjectName="kafka.log":type="Log",name="pingTopic-0-Size"	AttributeName=Value	writable=false	readable=true
+163853
