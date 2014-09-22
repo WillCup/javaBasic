@@ -17,7 +17,7 @@ import org.apache.commons.lang.StringUtils;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class ApacheHostDiscover implements PHPWebServerDiscoverInterface {
+public class ApacheAppDiscover implements PHPWebServerDiscoverInterface {
     public static final String SERVER_NAME = "SERVERNAME";
 
     public static final Pattern INCLUDE_PATTERN = Pattern.compile("Include.*",
@@ -65,7 +65,7 @@ public class ApacheHostDiscover implements PHPWebServerDiscoverInterface {
     public static final String hostEnable = "AddOutputFilter OUTPUT  php html htm";
 
     public static void main(String[] args) {
-        ApacheHostDiscover apacheReader = new ApacheHostDiscover();
+        ApacheAppDiscover apacheReader = new ApacheAppDiscover();
         Thread thread = new Thread(apacheReader);
         thread.start();
     }
