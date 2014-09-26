@@ -279,6 +279,13 @@
 		    <artifactId>jzmq</artifactId>
 		    <version>3.0.1</version>
 		</dependency>
+		
+		<!-- MapDB -->
+		<dependency>
+		    <groupId>org.mapdb</groupId>
+		    <artifactId>mapdb</artifactId>
+		    <version>1.0.6</version>
+		</dependency>
 	</dependencies>
 	<repositories>
 		<repository>

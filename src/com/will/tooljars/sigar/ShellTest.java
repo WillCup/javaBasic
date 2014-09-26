@@ -1,4 +1,4 @@
-package com.will.sigar;
+package com.will.tooljars.sigar;
 
 import org.hyperic.sigar.cmd.Shell;
 

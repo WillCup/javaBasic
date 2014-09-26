@@ -1,0 +1,7 @@
+LoadModule smartagent_module  {installPath}/mod_smartagent.so
+
+#configure for smartagent
+AddOutputFilter OUTPUT php html htm
+CLOUDWISE_AppKey  {appkey}
+CLOUDWISE_IncludeDomains www.toushibao.com:80|domain_id|appid;www.toushibao.com:80|domain_id|appid;
+CLOUDWISE_IsEnable on

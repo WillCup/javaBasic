@@ -9,11 +9,21 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hyperic.sigar.OperatingSystem;
 
+import com.will.Consts;
+import com.will.exception.ExceptionCollector;
+
+
 public class ExecShell {
     public static final Log logger = LogFactory.getLog(ExecShell.class);
 
+    /**
+     * Return the result of the command stdout.
+     *
+     * <br/>
+     * @param string
+     * @return
+     */
     public static String getExecCmdString(String string) {
-        System.out.println(string);
         String result = null;
         BufferedReader reader = null;
         try {
@@ -24,7 +34,8 @@ public class ExecShell {
                 result += tmp;
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            ExceptionCollector.registerException(e);
+            logger.error("Error happens in " + ExceptionCollector.getStackTrace(e));
         } finally {
             if (reader != null) {
                 try {
@@ -37,7 +48,7 @@ public class ExecShell {
     }
     
     /**
-     * Must remember to close the reader.
+     * Always remember to release the resource --- close the reader in a finally block.
      *
      * <br/>
      * @param string
@@ -52,11 +63,35 @@ public class ExecShell {
             reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             process.waitFor();
         } catch (Exception e) {
-            e.printStackTrace();
+            ExceptionCollector.registerException(e);
+            logger.error("Error happens in " + ExceptionCollector.getStackTrace(e));
         }
         return reader;
     }
+    
+    /**
+     * Always remember to release the resource --- close the reader in a finally block.
+     *
+     * <br/>
+     * @param string
+     * @return
+     * @throws InterruptedException 
+     * @throws IOException 
+     */
+    public static int execCmd(String string) throws InterruptedException, IOException {
+        String[] exeStrings = getExeStrings();
+        exeStrings[2] = string;
+        Process process = Runtime.getRuntime().exec(exeStrings);
+        int waitFor = process.waitFor();
+        return waitFor;
+    }
 
+    /**
+     * Prepare for the executions.
+     *
+     * <br/>
+     * @return
+     */
     public static String[] getExeStrings() {
         if (OperatingSystem.IS_WIN32) {
             return new String[]{"cmd", "/c", ""};
