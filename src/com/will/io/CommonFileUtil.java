@@ -5,6 +5,14 @@ import java.io.FilenameFilter;
 import java.util.List;
 import java.util.regex.Pattern;
 
+/**
+ * For some file operations.
+ * 
+ * <br/><br/>
+ * @author will
+ *
+ * @2014-9-29
+ */
 public abstract class CommonFileUtil {
     /**
      * 通过文件名后缀查找文件

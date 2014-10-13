@@ -1,21 +1,14 @@
 package com.will.tooljars.apache.tomcat;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.xpath.XPathExpressionException;
 
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
 
 import com.will.io.CommonFileUtil;
-import com.will.tooljars.apache.tomcat.TomcatDiscover.TomcatApp;
-import com.will.tooljars.xml.EncryptXMLReader;
 import com.will.tooljars.xml.XMLReader;
 
 public class TomcatDiscover {
@@ -40,9 +33,11 @@ public class TomcatDiscover {
 
         try {
 //            String path = "E:/files/learning/tomcat/apache-tomcat-7.0.55-src/output/build";
-            String catalinaHome = "E:/apps/Dev/apache-tomcat-6.0.39";
+//            String catalinaHome = "E:/apps/Dev/apache-tomcat-6.0.39";
+            
             String suffix = "server.xml";
-            File dir = new File(catalinaHome);
+            String catalinaHome = "/usr/local/apache-tomcat-7.0.54";
+            File dir = new File(catalinaHome );
 
             List<File> fileList = new ArrayList<File>();
             List<TomcatApp> apps = new ArrayList<TomcatApp>();
