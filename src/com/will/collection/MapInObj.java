@@ -1,11 +1,13 @@
 package com.will.collection;
 
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+
+import com.will.Cat;
+import com.will.Obj;
 
 /**
  * 
@@ -27,26 +29,5 @@ public class MapInObj {
             System.out.println(next.getKey());
             System.out.println(next.getValue());
         }
-    }
-}
-
-class Obj {
-    private Map<Integer, List<Cat>> map = new HashMap<Integer, List<Cat>>();
-
-    public Map<Integer, List<Cat>> getMap() {
-        return map;
-    }
-
-    public void setMap(Map<Integer, List<Cat>> map) {
-        this.map = map;
-    }
-}
-
-class Cat {
-    private String name;
-
-    public Cat(String name) {
-        super();
-        this.name = name;
     }
 }
