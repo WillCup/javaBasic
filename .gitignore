@@ -5,3 +5,4 @@ test-logs
 .settings
 .classpath
 data
+*.log
