@@ -1,9 +1,6 @@
 package com.will.tooljars.javassist.will;
 
 import java.io.File;
-import java.util.Properties;
-
-import sun.management.resources.agent;
 
 import com.sun.tools.attach.VirtualMachine;
 

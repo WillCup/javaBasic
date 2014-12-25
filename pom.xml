@@ -10,12 +10,17 @@
 		<es.version>1.2.1</es.version>
 		<jetty.version>9.2.1.v20140609</jetty.version>
 		<dropwizard.version>0.7.1</dropwizard.version>
-        <jersey.version>1.18.1</jersey.version>
-        <jackson.version>1.9.6</jackson.version>
-        <guice.version>3.0</guice.version>
+		<jersey.version>1.18.1</jersey.version>
+		<jackson.version>1.9.6</jackson.version>
+		<guice.version>3.0</guice.version>
 	</properties>
 
 	<dependencies>
+	   <dependency>
+	        <groupId>org.apache.maven.plugins</groupId> 
+	        <artifactId>maven-compiler-plugin</artifactId> 
+	        <version>2.3.2</version>
+	   </dependency>
 		<dependency>
 			<groupId>dom4j</groupId>
 			<artifactId>dom4j</artifactId>
@@ -142,77 +147,77 @@
 			<scope>compile</scope>
 		</dependency>
 
-		 <!-- Will guice + jersey + jetty + jackson -->
-       <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-server</artifactId>
-            <version>${jetty.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-servlet</artifactId>
-            <version>${jetty.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-servlets</artifactId>
-            <version>${jetty.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.jersey</groupId>
-            <artifactId>jersey-server</artifactId>
-            <version>${jersey.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.jersey</groupId>
-            <artifactId>jersey-servlet</artifactId>
-            <version>${jersey.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.jersey.contribs</groupId>
-            <artifactId>jersey-guice</artifactId>
-            <version>${jersey.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.jersey</groupId>
-            <artifactId>jersey-json</artifactId>
-            <version>${jersey.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-core-asl</artifactId>
-            <version>${jackson.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-mapper-asl</artifactId>
-            <version>${jackson.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-jaxrs</artifactId>
-            <version>${jackson.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-xc</artifactId>
-            <version>${jackson.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.inject</groupId>
-            <artifactId>guice</artifactId>
-            <version>${guice.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.inject.extensions</groupId>
-            <artifactId>guice-servlet</artifactId>
-            <version>${guice.version}</version>
-        </dependency>
+		<!-- Will guice + jersey + jetty + jackson -->
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-server</artifactId>
+			<version>${jetty.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-servlet</artifactId>
+			<version>${jetty.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-servlets</artifactId>
+			<version>${jetty.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-server</artifactId>
+			<version>${jersey.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-servlet</artifactId>
+			<version>${jersey.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey.contribs</groupId>
+			<artifactId>jersey-guice</artifactId>
+			<version>${jersey.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-json</artifactId>
+			<version>${jersey.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-core-asl</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-jaxrs</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-xc</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>${guice.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.inject.extensions</groupId>
+			<artifactId>guice-servlet</artifactId>
+			<version>${guice.version}</version>
+		</dependency>
 		<!-- <dependency> <groupId>com.sun.jersey</groupId> <artifactId>jersey-core</artifactId> 
 			<version>1.18.1</version> </dependency> <dependency> <groupId>javax.ws.rs</groupId> 
 			<artifactId>jsr311-api</artifactId> <version>1.1.1</version> </dependency> 
@@ -348,6 +353,13 @@
 			<artifactId>mapdb</artifactId>
 			<version>1.0.6</version>
 		</dependency>
+		
+		<!-- Zip package current program -->
+		 <dependency>
+		    <groupId>org.apache.maven</groupId>
+		    <artifactId>maven-ant-tasks</artifactId>
+		    <version>2.0.9</version>
+		</dependency> 
 	</dependencies>
 	<repositories>
 		<repository>
@@ -378,5 +390,59 @@
 			<layout>default</layout>
 		</repository>
 	</repositories>
-
+    
+    <build>
+	    <resources>
+	        <!-- 先指定 src/main/resources下所有文件及文件夹为资源文件 -->
+	        <resource>
+	            <directory>src/main/resources</directory>
+	            <includes>
+	                <include>**/*</include>
+	            </includes>
+	        </resource>
+	        <!-- 设置对auto-config.properties，jdbc.properties进行过虑，即这些文件中的${key}会被替换掉为真正的值 -->
+	        <resource>
+	            <directory>src/main/resources</directory>
+	            <includes>
+	                <include>auto-config.properties</include>
+	                <include>jdbc.properties</include>
+	            </includes>
+	            <filtering>true</filtering>
+	        </resource>
+	    </resources>
+	    <finalName>javaBasicFinalName</finalName>
+	    <outputDirectory>/var/will/maven</outputDirectory>
+	</build>
+	
+	
+	<profiles>
+	    <profile>
+	        <id>dev</id>
+	        <!-- 默认激活开发配制，使用config-dev.properties来替换设置过虑的资源文件中的${key} -->
+	        <activation>
+	            <activeByDefault>true</activeByDefault>
+	        </activation>
+	        <build>
+	            <filters>
+	                <filter>config-dev.properties</filter>
+	            </filters>
+	        </build>
+	    </profile>
+	    <profile>
+	        <id>test</id>
+	        <build>
+	            <filters>
+	                <filter>config-dev.properties</filter>
+	            </filters>
+	        </build>
+	    </profile>
+	    <profile>
+	        <id>product</id>
+	        <build>
+	            <filters>
+	                <filter>config-product.properties</filter>
+	            </filters>
+	        </build>
+	    </profile>
+	</profiles>
 </project>
