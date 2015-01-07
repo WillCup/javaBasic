@@ -25,6 +25,11 @@ import com.sun.tools.attach.VirtualMachine;
 public class VMAttatchJMX {
 
     public static void main(String[] args) throws Exception {
+        
+        //获取当前进程的pid
+        String pid = ManagementFactory.getRuntimeMXBean().getName()
+                .split("@")[0];
+        System.out.println("Current process id is : " + pid);
 
         // Attach 到5656的JVM进程上，后续Attach API再讲解
         VirtualMachine virtualmachine = VirtualMachine.attach("1316");
