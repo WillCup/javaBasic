@@ -16,6 +16,11 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.10</version>
+		</dependency>
 	   <dependency>
 	        <groupId>org.apache.maven.plugins</groupId> 
 	        <artifactId>maven-compiler-plugin</artifactId> 
@@ -398,16 +403,30 @@
 		</repository>
 	</repositories>
     
-    <build>
+    <!-- <build>
+    	<plugins>
+    		<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.1</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.codehaus.plexus</groupId>
+						<artifactId>plexus-compiler-javac</artifactId>
+						<version>1.8.1</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+    	</plugins>
 	    <resources>
-	        <!-- 先指定 src/main/resources下所有文件及文件夹为资源文件 -->
+	        先指定 src/main/resources下所有文件及文件夹为资源文件
 	        <resource>
 	            <directory>src/main/resources</directory>
 	            <includes>
 	                <include>**/*</include>
 	            </includes>
 	        </resource>
-	        <!-- 设置对auto-config.properties，jdbc.properties进行过虑，即这些文件中的${key}会被替换掉为真正的值 -->
+	        设置对auto-config.properties，jdbc.properties进行过虑，即这些文件中的${key}会被替换掉为真正的值
 	        <resource>
 	            <directory>src/main/resources</directory>
 	            <includes>
@@ -425,7 +444,7 @@
 	<profiles>
 	    <profile>
 	        <id>dev</id>
-	        <!-- 默认激活开发配制，使用config-dev.properties来替换设置过虑的资源文件中的${key} -->
+	        默认激活开发配制，使用config-dev.properties来替换设置过虑的资源文件中的${key}
 	        <activation>
 	            <activeByDefault>true</activeByDefault>
 	        </activation>
@@ -451,5 +470,5 @@
 	            </filters>
 	        </build>
 	    </profile>
-	</profiles>
+	</profiles> -->
 </project>
