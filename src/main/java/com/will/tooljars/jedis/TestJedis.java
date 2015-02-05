@@ -1,26 +1,53 @@
-/*package com.will.tooljars.jedis;
+package com.will.tooljars.jedis;
 import java.util.Arrays;
 import java.util.List;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPoolConfig;
 import redis.clients.jedis.JedisShardInfo;
 import redis.clients.jedis.Pipeline;
 import redis.clients.jedis.ShardedJedis;
-import redis.clients.jedis.ShardedJedisPipeline;
 import redis.clients.jedis.ShardedJedisPool;
 import redis.clients.jedis.Transaction;
 
-*//**
+/**
  * http://www.blogways.net/blog/2013/06/02/jedis-demo.html 
+ * 
+ * 测试redis的操作10000个用户队列，每个队列放10个值，
+ * 	
+ *  使用普通jedis对象，整体插入使用了140.418 seconds；
+ * 	使用管道中调用事务，耗时139.798 seconds；
+ * 	仅使用事务操作，耗时仅8.795 seconds；
+ * 	从这里面查找第5234个，遍历其中的2到8位索引数据，耗时33 millseconds。
+ * 
+ * 过程中redis耗用资源情况 —— 还算稳定了，4G内存，双核
+	processor	: 1
+	vendor_id	: GenuineIntel
+	cpu family	: 6
+	model		: 13
+	model name	: QEMU Virtual CPU version (cpu64-rhel6)
+	stepping	: 3
+	cpu MHz		: 1995.187
+	cache size	: 4096 KB
+	fpu		: yes
+	fpu_exception	: yes
+	cpuid level	: 4
+	wp		: yes
+	flags		: fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pse36 clflush mmx fxsr sse sse2 syscall nx lm unfair_spinlock pni cx16 hypervisor lahf_lm
+	bogomips	: 3990.37
+	clflush size	: 64
+	cache_alignment	: 64
+	address sizes	: 46 bits physical, 48 bits virtual
  * 
  * @author Will
  * @created at 2014-8-12 下午4:43:33
- *//*
+ */
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class TestJedis {
 
@@ -31,13 +58,12 @@ public class TestJedis {
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
         List<JedisShardInfo> shards = Arrays.asList(
-                new JedisShardInfo("localhost",6379),
-                new JedisShardInfo("localhost",6379)); //使用相同的ip:port,仅作测试
+                new JedisShardInfo("10.0.1.62",6379),
+                new JedisShardInfo("10.0.1.62",6379)); //使用相同的ip:port,仅作测试
 
 
-        jedis = new Jedis("localhost"); 
+        jedis = new Jedis("10.0.1.62", 6379, 60 * 1000); 
         sharding = new ShardedJedis(shards);
-
         pool = new ShardedJedisPool(new JedisPoolConfig(), shards);
     }
 
@@ -48,43 +74,50 @@ public class TestJedis {
         pool.destroy();
     }
 
-    *//**
-     * 一、普通同步方式
+   /**
+     * 一、普通同步方式 
      * 
      *      每次set之后都可以返回结果，标记是否成功
-     *//*
+     */
     @Test
     public void test1Normal() {
         long start = System.currentTimeMillis();
-        for (int i = 0; i < 100000; i++) {
-            String result = jedis.set("n" + i, "n" + i);
+        for (int i = 0; i < 10000; i++) {
+            for (int j = 0; j < 10 ; j++) {
+                jedis.lpush("key-" + i, "value-" + i + "-" + j);
+            }
         }
         long end = System.currentTimeMillis();
         System.out.println("Simple SET: " + ((end - start)/1000.0) + " seconds");
     }
 
-    *//**
+    /**
      * 二、事务方式(Transactions)
      * 
          * redis的事务很简单，他主要目的是保障，一个client发起的事务中的命令可以连续的执行，而中间不会插入其他client的命令。
          * 我们调用jedis.watch(…)方法来监控key，如果调用后key值发生变化，则整个事务会执行失败。
          * 另外，事务中某个操作失败，并不会回滚其他操作。 这一点需要注意。还有，我们可以使用discard()方法来取消事务。
-     *//*
+     */
     @Test
     public void test2Trans() {
         long start = System.currentTimeMillis();
         Transaction tx = jedis.multi();
-        for (int i = 0; i < 100000; i++) {
-            tx.set("t" + i, "t" + i);
-        }
+//        for (int i = 0; i < 100000; i++) {
+//            tx.set("t" + i, "t" + i);
+//        }
         //System.out.println(tx.get("t1000").get());
+        for (int i = 0; i < 10000; i++) {
+            for (int j = 0; j < 10 ; j++) {
+            	tx.lpush("key-" + i, "value-" + i + "-" + j);
+            }
+        }
 
         List<Object> results = tx.exec();
         long end = System.currentTimeMillis();
         System.out.println("Transaction SET: " + ((end - start)/1000.0) + " seconds");
     }
 
-    *//**
+    /**
      * 三、管道(Pipelining)
      *      
      *      有时，我们需要采用异步方式，一次发送多个指令，不同步等待其返回结果。这样可以取得非常好的执行效率。
@@ -108,14 +141,19 @@ public class TestJedis {
      * 
      *      就Jedis提供的方法而言，是可以做到在管道中使用事务。
      *      但是经测试（见本文后续部分），发现其效率和单独使用事务差不多，甚至还略微差点。
-     *//*
+     */
     @Test
     public void test4combPipelineTrans() {
         long start = System.currentTimeMillis();
         Pipeline pipeline = jedis.pipelined();
         pipeline.multi();
-        for (int i = 0; i < 100000; i++) {
-            pipeline.set("" + i, "" + i);
+//        for (int i = 0; i < 100000; i++) {
+//            pipeline.set("" + i, "" + i);
+//        }
+        for (int i = 0; i < 10000; i++) {
+            for (int j = 0; j < 10 ; j++) {
+            	pipeline.lpush("key-" + i, "value-" + i + "-" + j);
+            }
         }
         pipeline.exec();
         List<Object> results = pipeline.syncAndReturnAll();
@@ -123,7 +161,7 @@ public class TestJedis {
         System.out.println("Pipelined transaction: " + ((end - start)/1000.0) + " seconds");
     }
 
-    *//**
+    /**
      * 五、分布式直连同步调用
      * 
      *      这个是分布式直接连接，并且是同步调用，每步执行都返回执行结果。类似地，还有异步管道调用。
@@ -192,5 +230,26 @@ public class TestJedis {
         long end = System.currentTimeMillis();
         pool.returnResource(one);
         System.out.println("Pipelined@Pool SET: " + ((end - start)/1000.0) + " seconds");
-    }
-}*/
+        
+    }*/
+    
+    
+    /**
+    * 9、select the one key out of 100 000 keys from redis server
+    */
+   @Test
+   public void test9Select() {
+       
+	   long start = System.currentTimeMillis();
+       List<String> lrange = jedis.lrange("key-5334", 2, 8);
+       if (lrange == null || lrange.size() == 0) {
+    	   System.out.println("No key found");
+       }
+       for (String str : lrange) {
+    	   System.out.println(str);
+       }
+       long end = System.currentTimeMillis();
+       System.out.println("Simple GET: " + ((end - start)) + " millseconds");
+       
+   }
+}
