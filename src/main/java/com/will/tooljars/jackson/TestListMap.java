@@ -2,12 +2,10 @@ package com.will.tooljars.jackson;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.HashMap;
 
 import org.apache.commons.io.FileUtils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
 
 public class TestListMap {
     public static void main(String[] args) {
