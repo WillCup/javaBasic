@@ -1,6 +1,10 @@
 package com.will.tooljars.jedis;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -8,7 +12,10 @@ import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
+import com.mongodb.util.ThreadPool;
+
 import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 import redis.clients.jedis.JedisShardInfo;
 import redis.clients.jedis.Pipeline;
@@ -20,30 +27,34 @@ import redis.clients.jedis.Transaction;
  * http://www.blogways.net/blog/2013/06/02/jedis-demo.html 
  * 
  * 测试redis的操作10000个用户队列，每个队列放10个值，
- * 	
- *  使用普通jedis对象，整体插入使用了140.418 seconds；
- * 	使用管道中调用事务，耗时139.798 seconds；
- * 	仅使用事务操作，耗时仅8.795 seconds；
- * 	从这里面查找第5234个，遍历其中的2到8位索引数据，耗时33 millseconds。
+ * 	单线程：
+ *  	使用普通jedis对象，整体插入使用了140.418 seconds；
+ * 		使用管道中调用事务，耗时139.798 seconds；
+ * 		仅使用事务操作，耗时仅8.795 seconds；
+ * 		从这里面查找第5234个，遍历其中的2到8位索引数据，耗时33 millseconds。
  * 
- * 过程中redis耗用资源情况 —— 还算稳定了，4G内存，双核
-	processor	: 1
-	vendor_id	: GenuineIntel
-	cpu family	: 6
-	model		: 13
-	model name	: QEMU Virtual CPU version (cpu64-rhel6)
-	stepping	: 3
-	cpu MHz		: 1995.187
-	cache size	: 4096 KB
-	fpu		: yes
-	fpu_exception	: yes
-	cpuid level	: 4
-	wp		: yes
-	flags		: fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pse36 clflush mmx fxsr sse sse2 syscall nx lm unfair_spinlock pni cx16 hypervisor lahf_lm
-	bogomips	: 3990.37
-	clflush size	: 64
-	cache_alignment	: 64
-	address sizes	: 46 bits physical, 48 bits virtual
+ * 		过程中redis耗用资源情况 —— 还算稳定了，4G内存，双核
+		processor	: 1
+		vendor_id	: GenuineIntel
+		cpu family	: 6
+		model		: 13
+		model name	: QEMU Virtual CPU version (cpu64-rhel6)
+		stepping	: 3
+		cpu MHz		: 1995.187
+		cache size	: 4096 KB
+		fpu		: yes
+		fpu_exception	: yes
+		cpuid level	: 4
+		wp		: yes
+		flags		: fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pse36 clflush mmx fxsr sse sse2 syscall nx lm unfair_spinlock pni cx16 hypervisor lahf_lm
+		bogomips	: 3990.37
+		clflush size	: 64
+		cache_alignment	: 64
+		address sizes	: 46 bits physical, 48 bits virtual
+	300个并发线程，每个线程插入10条：
+ * 		仅使用事务操作，耗时仅0.414 seconds；
+ * 		从这里面查找第164个，遍历其中的2到8位索引数据，耗时33 millseconds。
+ * 		验证插入结果，没有问题。
  * 
  * @author Will
  * @created at 2014-8-12 下午4:43:33
@@ -54,6 +65,14 @@ public class TestJedis {
     private static Jedis jedis;
     private static ShardedJedis sharding;
     private static ShardedJedisPool pool;
+    /**
+     * 
+     * 1->获取Jedis实例需要从JedisPool中获取；
+	 * 2->用完Jedis实例需要返还给JedisPool；
+	 * 3->如果Jedis在使用过程中出错，则也需要还给JedisPool；
+	 * 
+     */
+    private static JedisPool jedisPool;
 
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
@@ -65,6 +84,19 @@ public class TestJedis {
         jedis = new Jedis("10.0.1.62", 6379, 60 * 1000); 
         sharding = new ShardedJedis(shards);
         pool = new ShardedJedisPool(new JedisPoolConfig(), shards);
+        
+        JedisPoolConfig poolCfg = new JedisPoolConfig();
+        //控制一个pool可分配多少个jedis实例，通过pool.getResource()来获取；
+        //如果赋值为-1，则表示不限制；如果pool已经分配了maxActive个jedis实例，则此时pool的状态为exhausted(耗尽)。
+        poolCfg.setMaxActive(500);
+        //控制一个pool最多有多少个状态为idle(空闲的)的jedis实例。
+        poolCfg.setMaxIdle(10);
+        //表示当borrow(引入)一个jedis实例时，最大的等待时间，如果超过等待时间，则直接抛出JedisConnectionException；
+        poolCfg.setMaxWait(1000 * 100);
+        //在borrow一个jedis实例时，是否提前进行validate操作；如果为true，则得到的jedis实例均是可用的；
+        poolCfg.setTestWhileIdle(true);
+//        poolCfg.setWhenExhaustedAction(JedisPoolConfig.WHEN_EXHAUSTED_BLOCK);
+        jedisPool = new JedisPool(poolCfg, "10.0.1.62", 6379);
     }
 
     @AfterClass
@@ -82,11 +114,22 @@ public class TestJedis {
     @Test
     public void test1Normal() {
         long start = System.currentTimeMillis();
-        for (int i = 0; i < 10000; i++) {
-            for (int j = 0; j < 10 ; j++) {
-                jedis.lpush("key-" + i, "value-" + i + "-" + j);
-            }
+        // 单线程
+//        for (int i = 0; i < 10000; i++) {
+//            for (int j = 0; j < 10 ; j++) {
+//                jedis.lpush("key-" + i, "value-" + i + "-" + j);
+//            }
+//        }
+        // 300线程并发
+        ThreadPoolExecutor threadPool = (ThreadPoolExecutor) Executors.newCachedThreadPool();
+        for (int i = 0; i < 300; i++) {
+        	threadPool.execute(new JedisThread(i)); 
         }
+//        try {
+//			threadPool.awaitTermination(60 * 2, TimeUnit.SECONDS);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
         long end = System.currentTimeMillis();
         System.out.println("Simple SET: " + ((end - start)/1000.0) + " seconds");
     }
@@ -251,5 +294,53 @@ public class TestJedis {
        long end = System.currentTimeMillis();
        System.out.println("Simple GET: " + ((end - start)) + " millseconds");
        
+   }
+   
+   /**
+    * 10、select the one key out of 100 000 keys from redis server
+    */
+   @Test
+   public void test10Select() {
+       
+	   long start = System.currentTimeMillis();
+	   for (int i = 0; i < 300; i++) {
+		   List<String> lrange = jedis.lrange("key--" + i, 0, -1);
+		   if (lrange.size() != 10) {
+			   System.out.println("error happens : " + lrange.size());
+		   }
+	   }
+       long end = System.currentTimeMillis();
+       System.out.println("Simple GET: " + ((end - start)) + " millseconds");
+       
+   }
+   
+   private class JedisThread implements Runnable {
+	    private int num;
+	    
+		public JedisThread(int num) {
+			super();
+			this.num = num;
+		}
+
+		@Override
+		public void run() {
+			Jedis innerJedis = jedisPool.getResource();
+			try {
+				Transaction tx = innerJedis.multi();
+				for (int i = 0; i < 10; i++) {
+					tx.lpush("key--" + num, "value-" + num + "-" + i);
+				}
+				List<Object> results = tx.exec();
+			} catch (Exception e) {
+				e.printStackTrace();
+				//在instance出错时，必须调用returnBrokenResource返还给pool，否则下次通过getResource得到的instance的缓冲区可能还存在数据，出现问题！
+				jedisPool.returnBrokenResource(innerJedis);
+			} finally {
+				if (innerJedis != null) {
+					jedisPool.returnResource(innerJedis);
+				}
+			}
+		}
+	   
    }
 }
