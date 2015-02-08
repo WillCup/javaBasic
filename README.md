@@ -1,4 +1,4 @@
-![img](will.jpg)
+![img](./will.jpg)
 img[alt=img] { width: 200px; height : 200px; }
 
 ## Java Basic
