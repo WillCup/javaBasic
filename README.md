@@ -1,5 +1,6 @@
-![img](./will.jpg)
-img[alt=img] { width: 200px; height : 200px; }
+>![img](./will.jpg)
+>img[alt=img] { width: 200px; height : 200px; }
+<img src="./will.jpg" alt="Drawing" width="200px" height="200px"/>
 
 ## Java Basic
 个人对一些常见的java工具进行整合测试，以后使用起来方便一些。所涉及的东西比较广泛，但是很常用。目前包含的工具代码有：
