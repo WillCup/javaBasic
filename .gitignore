@@ -7,3 +7,5 @@ test-logs
 data
 *.log
 /var
+.idea/*
+*.iml
